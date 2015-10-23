@@ -1,7 +1,7 @@
 # Coffee
 CoffeeScript programs - starting with tests, going to utitities :)
 
-Note, my coffeescript engine can deal with underscores in numbers (b/c of [lexer](https://github.com/georgiy-pruss/CoffeeScriptToo)).
+Note, my coffeescript engine can deal with underscores in numbers (b/c of [lexer](https://github.com/georgiy-pruss/CoffeeScriptToo/blob/master/lib/coffee-script)).
 
 ## NodeJS and CoffeeScript on Windows Tips
 
