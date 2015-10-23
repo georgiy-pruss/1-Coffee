@@ -5,7 +5,7 @@ test = ->
   n = 0
   k = 0
   for i in [1..30_000_000] # 30 mln times
-    n = rot (n + 0xFD02D9A7), 7
+    n = rot (n + 0xFD02_D9A7), 7
     n = ((n * 0x37E) & 0xFFFF_FFFF) ^ 0x135B_3721
     n = rot n, 19
     t = Math.abs(n).toString(16)+"~"
