@@ -8,8 +8,8 @@ urls = ["http://www.google.coffee/index.html",
 for url in urls
   do (url) -> # save url for this body, otherwise it'll be the last
     req = http.get url, (res) ->
-      wl "\n#{url}\n#{sc 'Y'}Got response: #{res.statusCode}#{sc()}"
       if res.statusCode != 200
+        wl "\n#{url}\n#{sc 'Y'}Got response: #{res.statusCode}#{sc()}"
         return
       data = ''
       res.setEncoding('utf8')
