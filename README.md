@@ -11,8 +11,8 @@ set NODE_PATH=C:/BIN/nodejs/node_modules
 Installed CoffeeScript and others...  
 By default npm installs all into C:\Users\...\AppData\Roaming\npm\node_modules\  
 with -g key, and to current directory without it. E.g.  
-C:\Users\...\AppData\Roaming\npm\node_modules\coffee-script\  
-C:\Users\...\AppData\Roaming\npm\node_modules\colors\  
+C:\Users\\...\AppData\Roaming\npm\node_modules\coffee-script\  
+C:\Users\\...\AppData\Roaming\npm\node_modules\colors\  
 You can move them to C:\BIN\nodejs\node_modules\ if NODE_PATH is set  
 Files cake.* and coffee.* I also moved to C:\BIN\nodejs\  
 set PATHEXT=...;.COFFEE;...  
