@@ -14,6 +14,6 @@ for url in urls
       data = ''
       res.setEncoding('utf8')
       res.on 'data', (chunk) -> data += chunk
-      res.on 'end', -> wl "\n#{url}\n#{sc 'C'}Data:\n#{data[...80]}\n...\n#{data[-80...]}"+
-                          "#{sc()}[#{data.length}]"
-    req.on 'error', (e) -> wl "\n#{url}\n#{sc 'R'}Got error: #{e.message}#{sc()}"
+      res.on 'end', -> wl "\n#{url}\n#{sc 'C'}Data: #{data.length}\n"+
+        "#{sc 'B'}#{data[...80]}\n...\n#{data[-80...]}#{sc()}"
+    req.on 'error', (e) -> wl "\n#{url}\n#{sc 'R'}Got error: #{e.message}#{sc()}" 
