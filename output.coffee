@@ -24,4 +24,4 @@ test_output = ->
 if not module.parent
   test_output()
 
-module.exports = wl:wl, wr:wr, sc:sc, test_output:test_output
+module.exports = {wl, wr, sc, test_output}
