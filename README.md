@@ -24,6 +24,6 @@ ftype CoffeeScript=C:\BIN\NodeJS\coffee.cmd "%1" %*
 Increase memory limit:
 coffee --nodejs --max-old-space-size=4000 prog_eats_memory.coffee
 
-Icon:
+Icon:  
 [HKEY_CLASSES_ROOT\CoffeeScript\DefaultIcon]  
 @="C:\\BIN\\NodeJS\\node_modules\\coffee-script\\coffeescript.ico"  
