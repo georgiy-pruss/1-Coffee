@@ -6,19 +6,18 @@ https = require "https"
 get = (market, ticker, cb) ->
   if !ticker || !market
     throw new Error 'invalid args'
-  else
-    url="https://www.google.com/finance/info?&q=#{market}:#{ticker}"
-    req = https.get url, (res) ->
-      if res.statusCode != 200
-        console.log "Status: #{res.statusCode}"
-        cb new Error 'Invalid request: status'
-      else
-        data = ''
-        res.on 'data', (chunk) -> data += chunk
-        res.on 'end', -> cb null, data
-    req.on 'error', (e) ->
-        console.log "Error: #{e.message}"
-        cb new Error 'Invalid request: error'
+  url="https://www.google.com/finance/info?&q=#{market}:#{ticker}"
+  req = https.get url, (res) ->
+    if res.statusCode != 200
+      console.log "Status: #{res.statusCode}"
+      cb new Error 'Invalid request: status'
+    else
+      data = ''
+      res.on 'data', (chunk) -> data += chunk
+      res.on 'end', -> cb null, data
+  req.on 'error', (e) ->
+      console.log "Error: #{e.message}"
+      cb new Error 'Invalid request: error'
 
 clean = (data, cb) ->
   string = data.replace('[','').replace(']','').replace('//','')
