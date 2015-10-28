@@ -8,21 +8,24 @@ url = require 'url'
 fs = require 'fs'
 
 HOMEDIR = process.cwd() # serve it from where it started
-MIMEIMG = '.jpg':'jpeg','.png':'png','.ico':'x-icon','.gif':'gif'
-HTMLS = /\.(htm|html|shtml)$/
-TXTS = /\.(log|txt|h|c|cpp|py|ijs|js|coffee)$/
+MIMEIMG = '.jpg':'jpeg','.png':'png','.ico':'x-icon','.gif':'gif','.bmp':'x-windows-bmp'
+HTMLS = /\.(htm|html|shtml)$/i
+TXTS = /\.(log|txt|h|c|cpp|py|ijs|js|coffee)$/i
 
 fmtsz = (n) -> ('          '+n)[-10..]
 
 writepage = (res,txt,fnm='.txt') ->
   if fnm.match HTMLS
-    res.writeHead 200, {'Content-Type': 'text/html', 'Content-Length': txt.length}
+    bytelen = (unescape encodeURIComponent txt).length
+    res.writeHead 200, {'Content-Type': 'text/html', 'Content-Length': bytelen}
     res.end txt
   else if fnm.match TXTS
-    res.writeHead 200, {'Content-Type': 'text/plain', 'Content-Length': txt.length}
+    bytelen = (unescape encodeURIComponent txt).length
+    res.writeHead 200, {'Content-Type': 'text/plain', 'Content-Length': bytelen}
     res.end txt
-  else if fnm[-4..] of MIMEIMG
-    res.writeHead 200, {'Content-Type': 'image/'+MIMEIMG[fnm[-4..]], 'Content-Length': txt.length}
+  else if fnm[-4..].toLowerCase() of MIMEIMG
+    mime = MIMEIMG[fnm[-4..].toLowerCase()]
+    res.writeHead 200, {'Content-Type': 'image/'+mime, 'Content-Length': txt.length}
     res.end txt, 'binary'
   else
     res.writeHead 200, {'Content-Type': 'application/octet-stream', 'Content-Length': txt.length}
@@ -30,14 +33,18 @@ writepage = (res,txt,fnm='.txt') ->
 
 listdir = (res, filename, pathname) ->
   if pathname[-1..]!='/' then pathname += '/'
+  parent = (pathname.split '/')[...-2].join '/'; if parent=='' then parent='/'
   files = fs.readdirSync filename
   lines = ["<html><head><meta charset='UTF-8'></head><body><pre>"]
+  if pathname!='/'
+    lines.push("#{fmtsz '‹DIR›'}  ......up one level......  <a href='#{parent}'>..</a>")
   for f in files
     if f != '.'
       st = fs.statSync path.join filename,f
       if st.isDirectory()
         f += '/'; st.size="‹DIR›"
-      lines.push "#{fmtsz st.size}  #{st.mtime.toISOString()}  <a href='#{pathname}#{f}'>#{f}</a>"
+      href = "#{pathname}#{f}".replace "'","\\'"
+      lines.push "#{fmtsz st.size}  #{st.mtime.toISOString()}  <a href='#{href}'>#{f}</a>"
   lines.push "</pre></body></html>"
   writepage res, lines.join('\n'), '.htm'
 
@@ -53,7 +60,7 @@ listener = (req, res) ->                   # 'GET'    '/abcd?xyz=2'
     writepage res, 'Goodbye, Root!'; process.exit()
   if req.url=='/'
     writepage res, 'Hello, Root!'
-  pathname = url.parse(req.url).pathname
+  pathname = unescape(url.parse(req.url).pathname)
   filename = path.join HOMEDIR, pathname
   fs.exists filename, (exists) ->
     if not exists
