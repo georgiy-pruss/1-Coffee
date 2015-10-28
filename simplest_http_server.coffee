@@ -1,7 +1,6 @@
 # TODO: add checks for index.htm[l]
 # TODO: find out why Firefox downloads images twice
 # TODO: why IE desn't show (=download)binary files
-# TODO: txt and html are not in utf8 exactly...
 
 http = require 'http'
 path = require 'path'
@@ -10,14 +9,16 @@ fs = require 'fs'
 
 HOMEDIR = process.cwd() # serve it from where it started
 MIMEIMG = '.jpg':'jpeg','.png':'png','.ico':'x-icon','.gif':'gif'
+HTMLS = /\.(htm|html|shtml)$/
+TXTS = /\.(log|txt|h|c|cpp|py|ijs|js|coffee)$/
 
 fmtsz = (n) -> ('          '+n)[-10..]
 
 writepage = (res,txt,fnm='.txt') ->
-  if fnm.match /\.(htm|html|shtml)$/
+  if fnm.match HTMLS
     res.writeHead 200, {'Content-Type': 'text/html', 'Content-Length': txt.length}
     res.end txt
-  else if fnm.match /\.(log|txt|h|c|cpp|py|js|coffee)$/
+  else if fnm.match TXTS
     res.writeHead 200, {'Content-Type': 'text/plain', 'Content-Length': txt.length}
     res.end txt
   else if fnm[-4..] of MIMEIMG
@@ -40,7 +41,7 @@ listdir = (res, filename, pathname) ->
   lines.push "</pre></body></html>"
   writepage res, lines.join('\n'), '.htm'
 
-listener = (req, res) ->                              # 'GET'    '/abcd?xyz=2'
+listener = (req, res) ->                   # 'GET'    '/abcd?xyz=2'
   console.log "#{(new Date).toISOString()} #{req.method} #{req.url}"
   # headers: { host: 'localhost:8000', connection: 'keep-alive',
   #   'user-agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0',
@@ -59,7 +60,8 @@ listener = (req, res) ->                              # 'GET'    '/abcd?xyz=2'
       res.writeHead 404, 'Content-Type': 'text/plain'; res.end "[404]"; return
     if fs.statSync(filename).isDirectory()
       listdir res, filename, pathname; return
-    fs.readFile filename, 'binary', (err, filetxt) ->
+    utf8 = filename.match(HTMLS) or filename.match(TXTS)
+    fs.readFile filename, (if utf8 then 'utf8' else 'binary'), (err, filetxt) ->
       if err
         writepage res, "#{err}"; return # or code 500
       writepage res, filetxt, filename
