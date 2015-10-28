@@ -37,3 +37,15 @@ download_file_httpget = (file_url) ->
       file_stm.end()
       console.log "File '#{file_name}' downloaded to '#{DOWNLOAD_DIR}'"
 download_file_httpget file_url
+
+###
+other examples of d/l:
+
+request('http://google.com/doodle.png').pipe(fs.createWriteStream('doodle.png'))
+
+fs.createReadStream('file.json').pipe(request.put('http://mysite.com/obj.json')) # PUT
+
+request.get('http://google.com/img.png').pipe(request.put('http://mysite.com/img.png'))
+
+request.get('http://some.server.com/').auth('username', 'password', false);
+###
