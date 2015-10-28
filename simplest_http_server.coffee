@@ -57,7 +57,7 @@ listener = (req, res) ->                   # 'GET'    '/abcd?xyz=2'
   filename = path.join HOMEDIR, pathname
   fs.exists filename, (exists) ->
     if not exists
-      res.writeHead 404, 'Content-Type': 'text/plain'; res.end "[404]"; return
+      res.writeHead 404; res.end(); return
     if fs.statSync(filename).isDirectory()
       listdir res, filename, pathname; return
     utf8 = filename.match(HTMLS) or filename.match(TXTS)
