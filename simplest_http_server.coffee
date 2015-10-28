@@ -1,30 +1,31 @@
 # TODO: add checks for index.htm[l]
 # TODO: find out why Firefox downloads images twice
-# TODO: why IE desn't show .coffee or .7z
+# TODO: why IE desn't show (=download)binary files
+# TODO: txt and html are not in utf8 exactly...
 
 http = require 'http'
+path = require 'path'
 url = require 'url'
-path = require("path")
-fs = require("fs")
+fs = require 'fs'
 
 HOMEDIR = process.cwd() # serve it from where it started
-MIMEIMG = ".jpg":"jpeg",".png":"png",".ico":"x-icon",".gif":"gif"
+MIMEIMG = '.jpg':'jpeg','.png':'png','.ico':'x-icon','.gif':'gif'
 
-fmtsz = (n) -> ("          "+n)[-10..]
+fmtsz = (n) -> ('          '+n)[-10..]
 
-writepage = (res,txt,fnm=".txt") ->
-  if fnm[-4..]==".htm" or fnm[-5..]==".html"
+writepage = (res,txt,fnm='.txt') ->
+  if fnm.match /\.(htm|html|shtml)$/
     res.writeHead 200, {'Content-Type': 'text/html', 'Content-Length': txt.length}
     res.end txt
-  else if fnm[-4..] in [".log",".txt"]
+  else if fnm.match /\.(log|txt|h|c|cpp|py|js|coffee)$/
     res.writeHead 200, {'Content-Type': 'text/plain', 'Content-Length': txt.length}
     res.end txt
   else if fnm[-4..] of MIMEIMG
     res.writeHead 200, {'Content-Type': 'image/'+MIMEIMG[fnm[-4..]], 'Content-Length': txt.length}
-    res.end txt, "binary"
+    res.end txt, 'binary'
   else
     res.writeHead 200, {'Content-Type': 'application/octet-stream', 'Content-Length': txt.length}
-    res.end txt, "binary"
+    res.end txt, 'binary'
 
 listdir = (res, filename, pathname) ->
   if pathname[-1..]!='/' then pathname += '/'
@@ -37,12 +38,10 @@ listdir = (res, filename, pathname) ->
         f += '/'; st.size="‹DIR›"
       lines.push "#{fmtsz st.size}  #{st.mtime.toISOString()}  <a href='#{pathname}#{f}'>#{f}</a>"
   lines.push "</pre></body></html>"
-  writepage res, lines.join("\n"), ".htm"
+  writepage res, lines.join('\n'), '.htm'
 
-g_cntr = 0 # this counter mainly shows that images are downloaded twice :( dunno why
 listener = (req, res) ->                              # 'GET'    '/abcd?xyz=2'
-  g_cntr+=1
-  console.log "#{g_cntr} #{(new Date).toISOString()} #{req.method} #{req.url}"
+  console.log "#{(new Date).toISOString()} #{req.method} #{req.url}"
   # headers: { host: 'localhost:8000', connection: 'keep-alive',
   #   'user-agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0',
   #   'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
@@ -60,7 +59,7 @@ listener = (req, res) ->                              # 'GET'    '/abcd?xyz=2'
       res.writeHead 404, 'Content-Type': 'text/plain'; res.end "[404]"; return
     if fs.statSync(filename).isDirectory()
       listdir res, filename, pathname; return
-    fs.readFile filename, "binary", (err, filetxt) ->
+    fs.readFile filename, 'binary', (err, filetxt) ->
       if err
         writepage res, "#{err}"; return # or code 500
       writepage res, filetxt, filename
