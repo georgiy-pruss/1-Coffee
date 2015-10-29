@@ -27,3 +27,5 @@ coffee --nodejs --max-old-space-size=4000 prog_eats_memory.coffee
 Icon:  
 [HKEY_CLASSES_ROOT\CoffeeScript\DefaultIcon]  
 @="C:\\BIN\\NodeJS\\node_modules\\coffee-script\\coffeescript.ico"  
+
+See also my dotfiles, e.g. _vimrc, coffee.vim, whitemoon.vim
