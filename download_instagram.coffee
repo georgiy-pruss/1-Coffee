@@ -1,5 +1,5 @@
 # download images from instagram
-# give it such urls like https://instagram.com/p/64MeCPISjc/
+# give it such urls as https://instagram.com/p/64MeCPISjc/
 # G.Pruss 2015
 
 fs = require 'fs'
