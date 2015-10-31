@@ -1,0 +1,1767 @@
+Yeah, you can use .coffee files there but npm will stumble at them
+
+► npm list --depth=0 -g
+C:\BIN\NodeJS
+├── coffee-script@1.10.0
+├── needle@0.10.0
+├── npm@3.3.10
+├──  error: ENOENT: no such file or directory, open 'C:\BIN\NodeJS\node_modules\output.coffee\package.json
+└── triplesec@3.0.25
+
+► npm list -g
+C:\BIN\NodeJS
+├── coffee-script@1.10.0
+├─┬ needle@0.10.0
+│ ├─┬ debug@2.2.0
+│ │ └── ms@0.7.1
+│ └── iconv-lite@0.4.13
+├─┬ npm@3.3.10
+│ ├── abbrev@1.0.7
+│ ├── ansi-regex@2.0.0
+│ ├── ansicolors@0.3.2
+│ ├── ansistyles@0.1.3
+│ ├── aproba@1.0.1
+│ ├── archy@1.0.0
+│ ├── async-some@1.0.2
+│ ├── chownr@1.0.1
+│ ├─┬ cmd-shim@2.0.1
+│ │ └── graceful-fs@3.0.8
+│ ├─┬ columnify@1.5.2
+│ │ └─┬ wcwidth@1.0.0
+│ │   └─┬ defaults@1.0.3
+│ │     └── clone@1.0.2
+│ ├─┬ config-chain@1.1.9
+│ │ └── proto-list@1.2.4
+│ ├── debuglog@1.0.1
+│ ├─┬ dezalgo@1.0.3
+│ │ └── asap@2.0.3
+│ ├── editor@1.0.0
+│ ├── fs-vacuum@1.2.7
+│ ├── fs-write-stream-atomic@1.0.4
+│ ├── fstream@1.0.8
+│ ├─┬ fstream-npm@1.0.5
+│ │ └─┬ fstream-ignore@1.0.2
+│ │   └─┬ minimatch@2.0.10
+│ │     └─┬ brace-expansion@1.1.1
+│ │       ├── balanced-match@0.2.0
+│ │       └── concat-map@0.0.1
+│ ├─┬ glob@5.0.15
+│ │ ├─┬ minimatch@3.0.0
+│ │ │ └─┬ brace-expansion@1.1.1
+│ │ │   ├── balanced-match@0.2.0
+│ │ │   └── concat-map@0.0.1
+│ │ └── path-is-absolute@1.0.0
+│ ├── graceful-fs@4.1.2
+│ ├── has-unicode@1.0.1
+│ ├── hosted-git-info@2.1.4
+│ ├── iferr@0.1.5
+│ ├── inflight@1.0.4
+│ ├── inherits@2.0.1
+│ ├── ini@1.3.4
+│ ├─┬ init-package-json@1.9.1
+│ │ └── promzard@0.3.0
+│ ├── lockfile@1.0.1
+│ ├── lodash._baseindexof@3.1.0
+│ ├── lodash._baseuniq@3.0.3
+│ ├── lodash._bindcallback@3.0.1
+│ ├── lodash._cacheindexof@3.0.2
+│ ├── lodash._createcache@3.1.2
+│ ├── lodash._getnative@3.9.1
+│ ├─┬ lodash.clonedeep@3.0.2
+│ │ └─┬ lodash._baseclone@3.3.0
+│ │   ├── lodash._arraycopy@3.0.0
+│ │   ├── lodash._arrayeach@3.0.0
+│ │   ├─┬ lodash._baseassign@3.2.0
+│ │   │ └── lodash._basecopy@3.0.1
+│ │   └── lodash._basefor@3.0.2
+│ ├── lodash.isarguments@3.0.4
+│ ├── lodash.isarray@3.0.4
+│ ├── lodash.keys@3.1.2
+│ ├── lodash.restparam@3.6.1
+│ ├─┬ lodash.union@3.1.0
+│ │ └── lodash._baseflatten@3.1.4
+│ ├─┬ lodash.uniq@3.2.2
+│ │ ├─┬ lodash._basecallback@3.3.1
+│ │ │ ├─┬ lodash._baseisequal@3.0.7
+│ │ │ │ └── lodash.istypedarray@3.0.2
+│ │ │ └── lodash.pairs@3.0.1
+│ │ └── lodash._isiterateecall@3.0.9
+│ ├─┬ lodash.without@3.2.1
+│ │ └── lodash._basedifference@3.0.3
+│ ├─┬ mkdirp@0.5.1
+│ │ └── minimist@0.0.8
+│ ├─┬ node-gyp@3.0.3
+│ │ ├─┬ glob@4.5.3
+│ │ │ └─┬ minimatch@2.0.10
+│ │ │   └─┬ brace-expansion@1.1.1
+│ │ │     ├── balanced-match@0.2.0
+│ │ │     └── concat-map@0.0.1
+│ │ ├─┬ minimatch@1.0.0
+│ │ │ ├── lru-cache@2.7.0
+│ │ │ └── sigmund@1.0.1
+│ │ ├─┬ path-array@1.0.0
+│ │ │ └─┬ array-index@0.1.1
+│ │ │   └─┬ debug@2.2.0
+│ │ │     └── ms@0.7.1
+│ │ └─┬ tar@1.0.3
+│ │   └── block-stream@0.0.8
+│ ├── nopt@3.0.4
+│ ├── normalize-git-url@3.0.1
+│ ├─┬ normalize-package-data@2.3.4
+│ │ └─┬ is-builtin-module@1.0.0
+│ │   └── builtin-modules@1.1.0
+│ ├── npm-cache-filename@1.0.2
+│ ├── npm-install-checks@2.0.1
+│ ├── npm-package-arg@4.0.2
+│ ├─┬ npm-registry-client@7.0.7
+│ │ └─┬ concat-stream@1.5.0
+│ │   ├─┬ readable-stream@2.0.2
+│ │   │ ├── core-util-is@1.0.1
+│ │   │ ├── isarray@0.0.1
+│ │   │ ├── process-nextick-args@1.0.3
+│ │   │ ├── string_decoder@0.10.31
+│ │   │ └── util-deprecate@1.0.2
+│ │   └── typedarray@0.0.6
+│ ├── npm-user-validate@0.1.2
+│ ├─┬ npmlog@1.2.1
+│ │ ├── ansi@0.3.0
+│ │ ├─┬ are-we-there-yet@1.0.4
+│ │ │ ├── delegates@0.1.0
+│ │ │ └─┬ readable-stream@1.1.13
+│ │ │   ├── core-util-is@1.0.1
+│ │ │   ├── isarray@0.0.1
+│ │ │   └── string_decoder@0.10.31
+│ │ └─┬ gauge@1.2.2
+│ │   ├─┬ lodash.pad@3.1.1
+│ │   │ ├── lodash._basetostring@3.0.1
+│ │   │ └─┬ lodash._createpadding@3.6.1
+│ │   │   └── lodash.repeat@3.0.1
+│ │   ├── lodash.padleft@3.1.1
+│ │   └── lodash.padright@3.1.1
+│ ├── once@1.3.2
+│ ├── opener@1.4.1
+│ ├─┬ osenv@0.1.3
+│ │ ├── os-homedir@1.0.1
+│ │ └── os-tmpdir@1.0.1
+│ ├── path-is-inside@1.0.1
+│ ├─┬ read@1.0.7
+│ │ └── mute-stream@0.0.5
+│ ├── read-cmd-shim@1.0.1
+│ ├─┬ read-installed@4.0.3
+│ │ └── util-extend@1.0.1
+│ ├─┬ read-package-json@2.0.1
+│ │ └─┬ json-parse-helpfulerror@1.0.3
+│ │   └── jju@1.2.1
+│ ├── read-package-tree@5.1.2
+│ ├── readdir-scoped-modules@1.0.2
+│ ├── realize-package-specifier@3.0.1
+│ ├─┬ request@2.65.0
+│ │ ├── aws-sign2@0.6.0
+│ │ ├─┬ bl@1.0.0
+│ │ │ └─┬ readable-stream@2.0.2
+│ │ │   ├── core-util-is@1.0.1
+│ │ │   ├── isarray@0.0.1
+│ │ │   ├── process-nextick-args@1.0.3
+│ │ │   ├── string_decoder@0.10.31
+│ │ │   └── util-deprecate@1.0.2
+│ │ ├── caseless@0.11.0
+│ │ ├─┬ combined-stream@1.0.5
+│ │ │ └── delayed-stream@1.0.0
+│ │ ├── extend@3.0.0
+│ │ ├── forever-agent@0.6.1
+│ │ ├─┬ form-data@1.0.0-rc3
+│ │ │ └── async@1.4.2
+│ │ ├─┬ har-validator@2.0.2
+│ │ │ ├─┬ chalk@1.1.1
+│ │ │ │ ├── ansi-styles@2.1.0
+│ │ │ │ ├── escape-string-regexp@1.0.3
+│ │ │ │ ├── has-ansi@2.0.0
+│ │ │ │ └── supports-color@2.0.0
+│ │ │ ├─┬ commander@2.9.0
+│ │ │ │ └── graceful-readlink@1.0.1
+│ │ │ ├─┬ is-my-json-valid@2.12.2
+│ │ │ │ ├── generate-function@2.0.0
+│ │ │ │ ├─┬ generate-object-property@1.2.0
+│ │ │ │ │ └── is-property@1.0.2
+│ │ │ │ ├── jsonpointer@2.0.0
+│ │ │ │ └── xtend@4.0.0
+│ │ │ └─┬ pinkie-promise@1.0.0
+│ │ │ └─┬ pinkie-promise@1.0.0
+│ │ │   └── pinkie@1.0.0
+│ │ ├─┬ hawk@3.1.0
+│ │ │ ├── boom@2.9.0
+│ │ │ ├── cryptiles@2.0.5
+│ │ │ ├── hoek@2.16.3
+│ │ │ └── sntp@1.0.9
+│ │ ├─┬ http-signature@0.11.0
+│ │ │ ├── asn1@0.1.11
+│ │ │ ├── assert-plus@0.1.5
+│ │ │ └── ctype@0.5.3
+│ │ ├── isstream@0.1.2
+│ │ ├── json-stringify-safe@5.0.1
+│ │ ├─┬ mime-types@2.1.7
+│ │ │ └── mime-db@1.19.0
+│ │ ├── node-uuid@1.4.3
+│ │ ├── oauth-sign@0.8.0
+│ │ ├── qs@5.2.0
+│ │ ├── stringstream@0.0.4
+│ │ ├── tough-cookie@2.2.0
+│ │ └── tunnel-agent@0.4.1
+│ ├── retry@0.8.0
+│ ├── rimraf@2.4.3
+│ ├── semver@5.0.3
+│ ├─┬ sha@2.0.1
+│ │ └─┬ readable-stream@2.0.2
+│ │   ├── core-util-is@1.0.1
+│ │   ├── isarray@0.0.1
+│ │   ├── process-nextick-args@1.0.3
+│ │   ├── string_decoder@0.10.31
+│ │   └── util-deprecate@1.0.2
+│ ├── slide@1.1.6
+│ ├── sorted-object@1.0.0
+│ ├── strip-ansi@3.0.0
+│ ├─┬ tar@2.2.1
+│ │ └── block-stream@0.0.8
+│ ├── text-table@0.2.0
+│ ├── uid-number@0.0.6
+│ ├── umask@1.1.0
+│ ├─┬ unique-filename@1.0.0
+│ │ └── unique-slug@1.0.0
+│ ├── unpipe@1.0.0
+│ ├─┬ validate-npm-package-license@3.0.1
+│ │ ├─┬ spdx-correct@1.0.1
+│ │ │ └── spdx-license-ids@1.0.2
+│ │ └─┬ spdx-expression-parse@1.0.0
+│ │   └── spdx-exceptions@1.0.3
+│ ├─┬ validate-npm-package-name@2.2.2
+│ │ └── builtins@0.0.7
+│ ├─┬ which@1.2.0
+│ │ └─┬ is-absolute@0.1.7
+│ │   └── is-relative@0.1.3
+│ ├── wrappy@1.0.1
+│ └── write-file-atomic@1.1.3
+├──  error: ENOENT: no such file or directory, open 'C:\BIN\NodeJS\node_modules\output.coffee ...
+└─┬ triplesec@3.0.25                                                            ^^^^^^^^^^^^^
+  ├── iced-error@0.0.9
+  ├── iced-lock@1.0.1
+  ├── iced-runtime@1.0.3
+  ├── more-entropy@0.0.7
+  └── progress@1.1.8
+
+► npm ll -g
+
+│ C:\BIN\NodeJS
+│ 
+├── coffee-script@1.10.0
+│   Unfancy JavaScript
+│   git://github.com/jashkenas/coffeescript.git
+│   http://coffeescript.org
+├─┬ needle@0.10.0
+│ │ The leanest and most handsome HTTP client in the Nodelands.
+│ │ git+https://github.com/tomas/needle.git
+│ │ https://github.com/tomas/needle
+│ ├─┬ debug@2.2.0
+│ │ │ small debugging utility
+│ │ │ git://github.com/visionmedia/debug.git
+│ │ │ https://github.com/visionmedia/debug
+│ │ └── ms@0.7.1
+│ │     Tiny ms conversion utility
+│ │     git://github.com/guille/ms.js.git
+│ │     https://github.com/guille/ms.js
+│ └── iconv-lite@0.4.13
+│     Convert character encodings in pure javascript.
+│     git://github.com/ashtuchkin/iconv-lite.git
+│     https://github.com/ashtuchkin/iconv-lite
+├─┬ npm@3.3.10
+│ │ a package manager for JavaScript
+│ │ git+https://github.com/npm/npm.git
+│ │ https://docs.npmjs.com/
+│ ├── abbrev@1.0.7
+│ │   Like ruby's abbrev module, but in js
+│ │   git+ssh://git@github.com/isaacs/abbrev-js.git
+│ │   https://github.com/isaacs/abbrev-js#readme
+│ ├── ansi-regex@2.0.0
+│ │   Regular expression for matching ANSI escape codes
+│ │   git+https://github.com/sindresorhus/ansi-regex.git
+│ │   https://github.com/sindresorhus/ansi-regex#readme
+│ ├── ansicolors@0.3.2
+│ │   Functions that surround a string with ansicolor codes so it prints in color.
+│ │   git://github.com/thlorenz/ansicolors.git
+│ │   https://github.com/thlorenz/ansicolors#readme
+│ ├── ansistyles@0.1.3
+│ │   Functions that surround a string with ansistyle codes so it prints in style.
+│ │   git://github.com/thlorenz/ansistyles.git
+│ │   https://github.com/thlorenz/ansistyles#readme
+│ ├── aproba@1.0.1
+│ │   A rediculously light-weight argument validator
+│ │   git+https://github.com/iarna/aproba.git
+│ │   https://github.com/iarna/aproba
+│ ├── archy@1.0.0
+│ │   render nested hierarchies `npm ls` style with unicode pipes
+│ │   git+ssh://git@github.com/substack/node-archy.git
+│ │   https://github.com/substack/node-archy
+│ ├─┬ async-some@1.0.2
+│ │ │ short-circuited, asynchronous version of Array.protototype.some
+│ │ │ git+https://github.com/othiym23/async-some.git
+│ │ │ https://github.com/othiym23/async-some
+│ │ └── dezalgo@1.0.3
+│ │     Contain async insanity so that the dark pony lord doesn't eat souls
+│ │     git+https://github.com/npm/dezalgo.git
+│ │     https://github.com/npm/dezalgo
+│ ├── chownr@1.0.1
+│ │   like `chown -R`
+│ │   git://github.com/isaacs/chownr.git
+│ │   https://github.com/isaacs/chownr#readme
+│ ├─┬ cmd-shim@2.0.1
+│ │ │ Used in npm for command line application support
+│ │ │ git+https://github.com/ForbesLindesay/cmd-shim.git
+│ │ │ https://github.com/ForbesLindesay/cmd-shim
+│ │ ├── graceful-fs@3.0.8
+│ │ │   A drop-in replacement for fs, making various improvements.
+│ │ │   git://github.com/isaacs/node-graceful-fs.git
+│ │ │   https://github.com/isaacs/node-graceful-fs#readme
+│ │ └── mkdirp@0.5.1
+│ │     Recursively mkdir, like `mkdir -p`
+│ │     git+https://github.com/substack/node-mkdirp.git
+│ │     https://github.com/substack/node-mkdirp#readme
+│ ├─┬ columnify@1.5.2
+│ │ │ Render data in text columns. Supports in-column text-wrap.
+│ │ │ git://github.com/timoxley/columnify.git
+│ │ │ https://github.com/timoxley/columnify
+│ │ ├── strip-ansi@3.0.0
+│ │ │   Strip ANSI escape codes
+│ │ │   git+https://github.com/sindresorhus/strip-ansi.git
+│ │ │   https://github.com/sindresorhus/strip-ansi#readme
+│ │ └─┬ wcwidth@1.0.0
+│ │   │ Port of C's wcwidth() and wcswidth()
+│ │   └─┬ defaults@1.0.3
+│ │     │ merge single level defaults over a config object
+│ │     │ git://github.com/tmpvar/defaults.git
+│ │     │ https://github.com/tmpvar/defaults#readme
+│ │     └── clone@1.0.2
+│ │         deep cloning of objects and arrays
+│ │         git://github.com/pvorb/node-clone.git
+│ │         https://github.com/pvorb/node-clone#readme
+│ ├─┬ config-chain@1.1.9
+│ │ │ HANDLE CONFIGURATION ONCE AND FOR ALL
+│ │ │ git+https://github.com/dominictarr/config-chain.git
+│ │ │ http://github.com/dominictarr/config-chain
+│ │ ├── ini@1.3.4
+│ │ │   An ini encoder/decoder for node
+│ │ │   git://github.com/isaacs/ini.git
+│ │ │   https://github.com/isaacs/ini#readme
+│ │ └── proto-list@1.2.4
+│ │     A utility for managing a prototype chain
+│ │     git+https://github.com/isaacs/proto-list.git
+│ │     https://github.com/isaacs/proto-list#readme
+│ ├── debuglog@1.0.1
+│ │   backport of util.debuglog from node v0.11
+│ │   git+https://github.com/sam-github/node-debuglog.git
+│ │   https://github.com/sam-github/node-debuglog
+│ ├─┬ dezalgo@1.0.3
+│ │ │ Contain async insanity so that the dark pony lord doesn't eat souls
+│ │ │ git+https://github.com/npm/dezalgo.git
+│ │ │ https://github.com/npm/dezalgo
+│ │ ├── asap@2.0.3
+│ │ │   High-priority task queue for Node.js and browsers
+│ │ │   git+https://github.com/kriskowal/asap.git
+│ │ │   https://github.com/kriskowal/asap#readme
+│ │ └── wrappy@1.0.1
+│ │     Callback wrapping utility
+│ │     git+https://github.com/npm/wrappy.git
+│ │     https://github.com/npm/wrappy
+│ ├── editor@1.0.0
+│ │   launch $EDITOR in your program
+│ │   git://github.com/substack/node-editor.git
+│ │   https://github.com/substack/node-editor
+│ ├─┬ fs-vacuum@1.2.7
+│ │ │ recursively remove empty directories -- to a point
+│ │ │ git+https://github.com/npm/fs-vacuum.git
+│ │ │ https://github.com/npm/fs-vacuum
+│ │ ├── graceful-fs@4.1.2
+│ │ │   A drop-in replacement for fs, making various improvements.
+│ │ │   git+https://github.com/isaacs/node-graceful-fs.git
+│ │ │   https://github.com/isaacs/node-graceful-fs#readme
+│ │ ├── path-is-inside@1.0.1
+│ │ │   Tests whether one path is inside another path
+│ │ │   git://github.com/domenic/path-is-inside.git
+│ │ │   https://github.com/domenic/path-is-inside#readme
+│ │ └── rimraf@2.4.3
+│ │     A deep deletion module for node (like `rm -rf`)
+│ │     git://github.com/isaacs/rimraf.git
+│ │     https://github.com/isaacs/rimraf#readme
+│ ├─┬ fs-write-stream-atomic@1.0.4
+│ │ │ Like `fs.createWriteStream(...)`, but atomic.
+│ │ │ git+https://github.com/npm/fs-write-stream-atomic.git
+│ │ │ https://github.com/npm/fs-write-stream-atomic
+│ │ └── graceful-fs@4.1.2
+│ │     A drop-in replacement for fs, making various improvements.
+│ │     git+https://github.com/isaacs/node-graceful-fs.git
+│ │     https://github.com/isaacs/node-graceful-fs#readme
+│ ├─┬ fstream@1.0.8
+│ │ │ Advanced file system stream things
+│ │ │ git://github.com/isaacs/fstream.git
+│ │ │ https://github.com/isaacs/fstream#readme
+│ │ ├── graceful-fs@4.1.2
+│ │ │   A drop-in replacement for fs, making various improvements.
+│ │ │   git+https://github.com/isaacs/node-graceful-fs.git
+│ │ │   https://github.com/isaacs/node-graceful-fs#readme
+│ │ ├── inherits@2.0.1
+│ │ │   Browser-friendly inheritance fully compatible with standard node.js inherits()
+│ │ │   git://github.com/isaacs/inherits.git
+│ │ │   https://github.com/isaacs/inherits#readme
+│ │ ├── mkdirp@0.5.1
+│ │ │   Recursively mkdir, like `mkdir -p`
+│ │ │   git+https://github.com/substack/node-mkdirp.git
+│ │ │   https://github.com/substack/node-mkdirp#readme
+│ │ └── rimraf@2.4.3
+│ │     A deep deletion module for node (like `rm -rf`)
+│ │     git://github.com/isaacs/rimraf.git
+│ │     https://github.com/isaacs/rimraf#readme
+│ ├─┬ fstream-npm@1.0.5
+│ │ │ fstream class for creating npm packages
+│ │ │ git://github.com/isaacs/fstream-npm.git
+│ │ │ https://github.com/isaacs/fstream-npm#readme
+│ │ ├─┬ fstream-ignore@1.0.2
+│ │ │ │ A thing for ignoring files based on globs
+│ │ │ │ git://github.com/isaacs/fstream-ignore.git
+│ │ │ │ https://github.com/isaacs/fstream-ignore
+│ │ │ ├── fstream@1.0.8
+│ │ │ │   Advanced file system stream things
+│ │ │ │   git://github.com/isaacs/fstream.git
+│ │ │ │   https://github.com/isaacs/fstream#readme
+│ │ │ ├── inherits@2.0.1
+│ │ │ │   Browser-friendly inheritance fully compatible with standard node.js inherits()
+│ │ │ │   git://github.com/isaacs/inherits.git
+│ │ │ │   https://github.com/isaacs/inherits#readme
+│ │ │ └─┬ minimatch@2.0.10
+│ │ │   │ a glob matcher in javascript
+│ │ │   │ git://github.com/isaacs/minimatch.git
+│ │ │   │ https://github.com/isaacs/minimatch#readme
+│ │ │   └─┬ brace-expansion@1.1.1
+│ │ │     │ Brace expansion as known from sh/bash
+│ │ │     │ git://github.com/juliangruber/brace-expansion.git
+│ │ │     │ https://github.com/juliangruber/brace-expansion
+│ │ │     ├── balanced-match@0.2.0
+│ │ │     │   Match balanced character pairs, like "{" and "}"
+│ │ │     │   git://github.com/juliangruber/balanced-match.git
+│ │ │     │   https://github.com/juliangruber/balanced-match
+│ │ │     └── concat-map@0.0.1
+│ │ │         concatenative mapdashery
+│ │ │         git://github.com/substack/node-concat-map.git
+│ │ │         https://github.com/substack/node-concat-map
+│ │ └── inherits@2.0.1
+│ │     Browser-friendly inheritance fully compatible with standard node.js inherits()
+│ │     git://github.com/isaacs/inherits.git
+│ │     https://github.com/isaacs/inherits#readme
+│ ├─┬ glob@5.0.15
+│ │ │ a little globber
+│ │ │ git://github.com/isaacs/node-glob.git
+│ │ │ https://github.com/isaacs/node-glob#readme
+│ │ ├── inflight@1.0.4
+│ │ │   Add callbacks to requests in flight to avoid async duplication
+│ │ │   git://github.com/isaacs/inflight.git
+│ │ │   https://github.com/isaacs/inflight
+│ │ ├── inherits@2.0.1
+│ │ │   Browser-friendly inheritance fully compatible with standard node.js inherits()
+│ │ │   git://github.com/isaacs/inherits.git
+│ │ │   https://github.com/isaacs/inherits#readme
+│ │ ├─┬ minimatch@3.0.0
+│ │ │ │ a glob matcher in javascript
+│ │ │ │ git://github.com/isaacs/minimatch.git
+│ │ │ │ https://github.com/isaacs/minimatch#readme
+│ │ │ └─┬ brace-expansion@1.1.1
+│ │ │   │ Brace expansion as known from sh/bash
+│ │ │   │ git://github.com/juliangruber/brace-expansion.git
+│ │ │   │ https://github.com/juliangruber/brace-expansion
+│ │ │   ├── balanced-match@0.2.0
+│ │ │   │   Match balanced character pairs, like "{" and "}"
+│ │ │   │   git://github.com/juliangruber/balanced-match.git
+│ │ │   │   https://github.com/juliangruber/balanced-match
+│ │ │   └── concat-map@0.0.1
+│ │ │       concatenative mapdashery
+│ │ │       git://github.com/substack/node-concat-map.git
+│ │ │       https://github.com/substack/node-concat-map
+│ │ ├── once@1.3.2
+│ │ │   Run a function exactly one time
+│ │ │   git://github.com/isaacs/once.git
+│ │ │   https://github.com/isaacs/once#readme
+│ │ └── path-is-absolute@1.0.0
+│ │     Node.js 0.12 path.isAbsolute() ponyfill
+│ │     git+https://github.com/sindresorhus/path-is-absolute.git
+│ │     https://github.com/sindresorhus/path-is-absolute#readme
+│ ├── graceful-fs@4.1.2
+│ │   A drop-in replacement for fs, making various improvements.
+│ │   git+https://github.com/isaacs/node-graceful-fs.git
+│ │   https://github.com/isaacs/node-graceful-fs#readme
+│ ├── has-unicode@1.0.1
+│ │   Try to guess if your terminal supports unicode
+│ │   git+https://github.com/iarna/has-unicode.git
+│ │   https://github.com/iarna/has-unicode
+│ ├── hosted-git-info@2.1.4
+│ │   Provides metadata and conversions from repository urls for Github, Bitbucket and Gitlab
+│ │   git+https://github.com/npm/hosted-git-info.git
+│ │   https://github.com/npm/hosted-git-info
+│ ├── iferr@0.1.5
+│ │   Higher-order functions for easier error handling
+│ │   git+https://github.com/shesek/iferr.git
+│ │   https://github.com/shesek/iferr
+│ ├─┬ inflight@1.0.4
+│ │ │ Add callbacks to requests in flight to avoid async duplication
+│ │ │ git://github.com/isaacs/inflight.git
+│ │ │ https://github.com/isaacs/inflight
+│ │ ├── once@1.3.2
+│ │ │   Run a function exactly one time
+│ │ │   git://github.com/isaacs/once.git
+│ │ │   https://github.com/isaacs/once#readme
+│ │ └── wrappy@1.0.1
+│ │     Callback wrapping utility
+│ │     git+https://github.com/npm/wrappy.git
+│ │     https://github.com/npm/wrappy
+│ ├── inherits@2.0.1
+│ │   Browser-friendly inheritance fully compatible with standard node.js inherits()
+│ │   git://github.com/isaacs/inherits.git
+│ │   https://github.com/isaacs/inherits#readme
+│ ├── ini@1.3.4
+│ │   An ini encoder/decoder for node
+│ │   git://github.com/isaacs/ini.git
+│ │   https://github.com/isaacs/ini#readme
+│ ├─┬ init-package-json@1.9.1
+│ │ │ A node module to get your node module started
+│ │ │ git://github.com/isaacs/init-package-json.git
+│ │ │ https://github.com/isaacs/init-package-json#readme
+│ │ ├── glob@5.0.15
+│ │ │   a little globber
+│ │ │   git://github.com/isaacs/node-glob.git
+│ │ │   https://github.com/isaacs/node-glob#readme
+│ │ ├── npm-package-arg@4.0.2
+│ │ │   Parse the things that can be arguments to `npm install`
+│ │ │   git+https://github.com/npm/npm-package-arg.git
+│ │ │   https://github.com/npm/npm-package-arg
+│ │ ├─┬ promzard@0.3.0
+│ │ │ │ prompting wizardly
+│ │ │ │ git://github.com/isaacs/promzard.git
+│ │ │ │ https://github.com/isaacs/promzard
+│ │ │ └── read@1.0.7
+│ │ │     read(1) for node programs
+│ │ │     git://github.com/isaacs/read.git
+│ │ │     https://github.com/isaacs/read#readme
+│ │ ├── read@1.0.7
+│ │ │   read(1) for node programs
+│ │ │   git://github.com/isaacs/read.git
+│ │ │   https://github.com/isaacs/read#readme
+│ │ ├── read-package-json@2.0.1
+│ │ │   The thing npm uses to read package.json files with semantics and defaults and validation
+│ │ │   git://github.com/isaacs/read-package-json.git
+│ │ │   https://github.com/isaacs/read-package-json#readme
+│ │ ├── semver@5.0.3
+│ │ │   The semantic version parser used by npm.
+│ │ │   git+https://github.com/npm/node-semver.git
+│ │ │   https://github.com/npm/node-semver#readme
+│ │ ├── validate-npm-package-license@3.0.1
+│ │ │   Give me a string and I'll tell you if it's a valid npm package license string
+│ │ │   git+https://github.com/kemitchell/validate-npm-package-license.js.git
+│ │ │   https://github.com/kemitchell/validate-npm-package-license.js#readme
+│ │ └── validate-npm-package-name@2.2.2
+│ │     Give me a string and I'll tell you if it's a valid npm package name
+│ │     git+https://github.com/npm/validate-npm-package-name.git
+│ │     https://github.com/npm/validate-npm-package-name
+│ ├── lockfile@1.0.1
+│ │   A very polite lock file utility, which endeavors to not litter, and to wait patiently for others.
+│ │   git://github.com/isaacs/lockfile.git
+│ │   https://github.com/isaacs/lockfile#readme
+│ ├── lodash._baseindexof@3.1.0
+│ │   The modern build of lodash’s internal `baseIndexOf` as a module.
+│ │   git+https://github.com/lodash/lodash.git
+│ │   https://lodash.com/
+│ ├─┬ lodash._baseuniq@3.0.3
+│ │ │ The modern build of lodash’s internal `baseUniq` as a module.
+│ │ │ git+https://github.com/lodash/lodash.git
+│ │ │ https://lodash.com/
+│ │ ├── lodash._baseindexof@3.1.0
+│ │ │   The modern build of lodash’s internal `baseIndexOf` as a module.
+│ │ │   git+https://github.com/lodash/lodash.git
+│ │ │   https://lodash.com/
+│ │ ├── lodash._cacheindexof@3.0.2
+│ │ │   The modern build of lodash’s internal `cacheIndexOf` as a module.
+│ │ │   git+https://github.com/lodash/lodash.git
+│ │ │   https://lodash.com/
+│ │ └── lodash._createcache@3.1.2
+│ │     The modern build of lodash’s internal `createCache` as a module.
+│ │     git+https://github.com/lodash/lodash.git
+│ │     https://lodash.com/
+│ ├── lodash._bindcallback@3.0.1
+│ │   The modern build of lodash’s internal `bindCallback` as a module.
+│ │   git+https://github.com/lodash/lodash.git
+│ │   https://lodash.com/
+│ ├── lodash._cacheindexof@3.0.2
+│ │   The modern build of lodash’s internal `cacheIndexOf` as a module.
+│ │   git+https://github.com/lodash/lodash.git
+│ │   https://lodash.com/
+│ ├─┬ lodash._createcache@3.1.2
+│ │ │ The modern build of lodash’s internal `createCache` as a module.
+│ │ │ git+https://github.com/lodash/lodash.git
+│ │ │ https://lodash.com/
+│ │ └── lodash._getnative@3.9.1
+│ │     The modern build of lodash’s internal `getNative` as a module.
+│ │     git+https://github.com/lodash/lodash.git
+│ │     https://lodash.com/
+│ ├── lodash._getnative@3.9.1
+│ │   The modern build of lodash’s internal `getNative` as a module.
+│ │   git+https://github.com/lodash/lodash.git
+│ │   https://lodash.com/
+│ ├─┬ lodash.clonedeep@3.0.2
+│ │ │ The modern build of lodash’s `_.cloneDeep` as a module.
+│ │ │ git+https://github.com/lodash/lodash.git
+│ │ │ https://lodash.com/
+│ │ ├─┬ lodash._baseclone@3.3.0
+│ │ │ │ The modern build of lodash’s internal `baseClone` as a module.
+│ │ │ │ git+https://github.com/lodash/lodash.git
+│ │ │ │ https://lodash.com/
+│ │ │ ├── lodash._arraycopy@3.0.0
+│ │ │ │   The modern build of lodash’s internal `arrayCopy` as a module.
+│ │ │ │   git+https://github.com/lodash/lodash.git
+│ │ │ │   https://lodash.com/
+│ │ │ ├── lodash._arrayeach@3.0.0
+│ │ │ │   The modern build of lodash’s internal `arrayEach` as a module.
+│ │ │ │   git+https://github.com/lodash/lodash.git
+│ │ │ │   https://lodash.com/
+│ │ │ ├─┬ lodash._baseassign@3.2.0
+│ │ │ │ │ The modern build of lodash’s internal `baseAssign` as a module.
+│ │ │ │ │ git+https://github.com/lodash/lodash.git
+│ │ │ │ │ https://lodash.com/
+│ │ │ │ ├── lodash._basecopy@3.0.1
+│ │ │ │ │   The modern build of lodash’s internal `baseCopy` as a module.
+│ │ │ │ │   git+https://github.com/lodash/lodash.git
+│ │ │ │ │   https://lodash.com/
+│ │ │ │ └── lodash.keys@3.1.2
+│ │ │ │     The modern build of lodash’s `_.keys` as a module.
+│ │ │ │     git+https://github.com/lodash/lodash.git
+│ │ │ │     https://lodash.com/
+│ │ │ ├── lodash._basefor@3.0.2
+│ │ │ │   The modern build of lodash’s internal `baseFor` as a module.
+│ │ │ │   git+https://github.com/lodash/lodash.git
+│ │ │ │   https://lodash.com/
+│ │ │ ├── lodash.isarray@3.0.4
+│ │ │ │   The modern build of lodash’s `_.isArray` as a module.
+│ │ │ │   git+https://github.com/lodash/lodash.git
+│ │ │ │   https://lodash.com/
+│ │ │ └── lodash.keys@3.1.2
+│ │ │     The modern build of lodash’s `_.keys` as a module.
+│ │ │     git+https://github.com/lodash/lodash.git
+│ │ │     https://lodash.com/
+│ │ └── lodash._bindcallback@3.0.1
+│ │     The modern build of lodash’s internal `bindCallback` as a module.
+│ │     git+https://github.com/lodash/lodash.git
+│ │     https://lodash.com/
+│ ├── lodash.isarguments@3.0.4
+│ │   The modern build of lodash’s `_.isArguments` as a module.
+│ │   git+https://github.com/lodash/lodash.git
+│ │   https://lodash.com/
+│ ├── lodash.isarray@3.0.4
+│ │   The modern build of lodash’s `_.isArray` as a module.
+│ │   git+https://github.com/lodash/lodash.git
+│ │   https://lodash.com/
+│ ├─┬ lodash.keys@3.1.2
+│ │ │ The modern build of lodash’s `_.keys` as a module.
+│ │ │ git+https://github.com/lodash/lodash.git
+│ │ │ https://lodash.com/
+│ │ ├── lodash._getnative@3.9.1
+│ │ │   The modern build of lodash’s internal `getNative` as a module.
+│ │ │   git+https://github.com/lodash/lodash.git
+│ │ │   https://lodash.com/
+│ │ ├── lodash.isarguments@3.0.4
+│ │ │   The modern build of lodash’s `_.isArguments` as a module.
+│ │ │   git+https://github.com/lodash/lodash.git
+│ │ │   https://lodash.com/
+│ │ └── lodash.isarray@3.0.4
+│ │     The modern build of lodash’s `_.isArray` as a module.
+│ │     git+https://github.com/lodash/lodash.git
+│ │     https://lodash.com/
+│ ├── lodash.restparam@3.6.1
+│ │   The modern build of lodash’s `_.restParam` as a module.
+│ │   git+https://github.com/lodash/lodash.git
+│ │   https://lodash.com/
+│ ├─┬ lodash.union@3.1.0
+│ │ │ The modern build of lodash’s `_.union` as a module.
+│ │ │ git+https://github.com/lodash/lodash.git
+│ │ │ https://lodash.com/
+│ │ ├─┬ lodash._baseflatten@3.1.4
+│ │ │ │ The modern build of lodash’s internal `baseFlatten` as a module.
+│ │ │ │ git+https://github.com/lodash/lodash.git
+│ │ │ │ https://lodash.com/
+│ │ │ ├── lodash.isarguments@3.0.4
+│ │ │ │   The modern build of lodash’s `_.isArguments` as a module.
+│ │ │ │   git+https://github.com/lodash/lodash.git
+│ │ │ │   https://lodash.com/
+│ │ │ └── lodash.isarray@3.0.4
+│ │ │     The modern build of lodash’s `_.isArray` as a module.
+│ │ │     git+https://github.com/lodash/lodash.git
+│ │ │     https://lodash.com/
+│ │ ├── lodash._baseuniq@3.0.3
+│ │ │   The modern build of lodash’s internal `baseUniq` as a module.
+│ │ │   git+https://github.com/lodash/lodash.git
+│ │ │   https://lodash.com/
+│ │ └── lodash.restparam@3.6.1
+│ │     The modern build of lodash’s `_.restParam` as a module.
+│ │     git+https://github.com/lodash/lodash.git
+│ │     https://lodash.com/
+│ ├─┬ lodash.uniq@3.2.2
+│ │ │ The modern build of lodash’s `_.uniq` as a module.
+│ │ │ git+https://github.com/lodash/lodash.git
+│ │ │ https://lodash.com/
+│ │ ├─┬ lodash._basecallback@3.3.1
+│ │ │ │ The modern build of lodash’s internal `baseCallback` as a module.
+│ │ │ │ git+https://github.com/lodash/lodash.git
+│ │ │ │ https://lodash.com/
+│ │ │ ├─┬ lodash._baseisequal@3.0.7
+│ │ │ │ │ The modern build of lodash’s internal `baseIsEqual` as a module.
+│ │ │ │ │ git+https://github.com/lodash/lodash.git
+│ │ │ │ │ https://lodash.com/
+│ │ │ │ ├── lodash.isarray@3.0.4
+│ │ │ │ │   The modern build of lodash’s `_.isArray` as a module.
+│ │ │ │ │   git+https://github.com/lodash/lodash.git
+│ │ │ │ │   https://lodash.com/
+│ │ │ │ ├── lodash.istypedarray@3.0.2
+│ │ │ │ │   The modern build of lodash’s `_.isTypedArray` as a module.
+│ │ │ │ │   git+https://github.com/lodash/lodash.git
+│ │ │ │ │   https://lodash.com/
+│ │ │ │ └── lodash.keys@3.1.2
+│ │ │ │     The modern build of lodash’s `_.keys` as a module.
+│ │ │ │     git+https://github.com/lodash/lodash.git
+│ │ │ │     https://lodash.com/
+│ │ │ ├── lodash._bindcallback@3.0.1
+│ │ │ │   The modern build of lodash’s internal `bindCallback` as a module.
+│ │ │ │   git+https://github.com/lodash/lodash.git
+│ │ │ │   https://lodash.com/
+│ │ │ ├── lodash.isarray@3.0.4
+│ │ │ │   The modern build of lodash’s `_.isArray` as a module.
+│ │ │ │   git+https://github.com/lodash/lodash.git
+│ │ │ │   https://lodash.com/
+│ │ │ └─┬ lodash.pairs@3.0.1
+│ │ │   │ The modern build of lodash’s `_.pairs` as a module.
+│ │ │   │ git+https://github.com/lodash/lodash.git
+│ │ │   │ https://lodash.com/
+│ │ │   └── lodash.keys@3.1.2
+│ │ │       The modern build of lodash’s `_.keys` as a module.
+│ │ │       git+https://github.com/lodash/lodash.git
+│ │ │       https://lodash.com/
+│ │ ├── lodash._baseuniq@3.0.3
+│ │ │   The modern build of lodash’s internal `baseUniq` as a module.
+│ │ │   git+https://github.com/lodash/lodash.git
+│ │ │   https://lodash.com/
+│ │ ├── lodash._getnative@3.9.1
+│ │ │   The modern build of lodash’s internal `getNative` as a module.
+│ │ │   git+https://github.com/lodash/lodash.git
+│ │ │   https://lodash.com/
+│ │ ├── lodash._isiterateecall@3.0.9
+│ │ │   The modern build of lodash’s internal `isIterateeCall` as a module.
+│ │ │   git+https://github.com/lodash/lodash.git
+│ │ │   https://lodash.com/
+│ │ └── lodash.isarray@3.0.4
+│ │     The modern build of lodash’s `_.isArray` as a module.
+│ │     git+https://github.com/lodash/lodash.git
+│ │     https://lodash.com/
+│ ├─┬ lodash.without@3.2.1
+│ │ │ The modern build of lodash’s `_.without` as a module.
+│ │ │ git+https://github.com/lodash/lodash.git
+│ │ │ https://lodash.com/
+│ │ ├─┬ lodash._basedifference@3.0.3
+│ │ │ │ The modern build of lodash’s internal `baseDifference` as a module.
+│ │ │ │ git+https://github.com/lodash/lodash.git
+│ │ │ │ https://lodash.com/
+│ │ │ ├── lodash._baseindexof@3.1.0
+│ │ │ │   The modern build of lodash’s internal `baseIndexOf` as a module.
+│ │ │ │   git+https://github.com/lodash/lodash.git
+│ │ │ │   https://lodash.com/
+│ │ │ ├── lodash._cacheindexof@3.0.2
+│ │ │ │   The modern build of lodash’s internal `cacheIndexOf` as a module.
+│ │ │ │   git+https://github.com/lodash/lodash.git
+│ │ │ │   https://lodash.com/
+│ │ │ └── lodash._createcache@3.1.2
+│ │ │     The modern build of lodash’s internal `createCache` as a module.
+│ │ │     git+https://github.com/lodash/lodash.git
+│ │ │     https://lodash.com/
+│ │ └── lodash.restparam@3.6.1
+│ │     The modern build of lodash’s `_.restParam` as a module.
+│ │     git+https://github.com/lodash/lodash.git
+│ │     https://lodash.com/
+│ ├─┬ mkdirp@0.5.1
+│ │ │ Recursively mkdir, like `mkdir -p`
+│ │ │ git+https://github.com/substack/node-mkdirp.git
+│ │ │ https://github.com/substack/node-mkdirp#readme
+│ │ └── minimist@0.0.8
+│ │     parse argument options
+│ │     git://github.com/substack/minimist.git
+│ │     https://github.com/substack/minimist
+│ ├─┬ node-gyp@3.0.3
+│ │ │ Node.js native addon build tool
+│ │ │ git://github.com/nodejs/node-gyp.git
+│ │ │ https://github.com/nodejs/node-gyp
+│ │ ├── fstream@1.0.8
+│ │ │   Advanced file system stream things
+│ │ │   git://github.com/isaacs/fstream.git
+│ │ │   https://github.com/isaacs/fstream#readme
+│ │ ├─┬ glob@4.5.3
+│ │ │ │ a little globber
+│ │ │ │ git://github.com/isaacs/node-glob.git
+│ │ │ │ https://github.com/isaacs/node-glob#readme
+│ │ │ ├── inflight@1.0.4
+│ │ │ │   Add callbacks to requests in flight to avoid async duplication
+│ │ │ │   git://github.com/isaacs/inflight.git
+│ │ │ │   https://github.com/isaacs/inflight
+│ │ │ ├── inherits@2.0.1
+│ │ │ │   Browser-friendly inheritance fully compatible with standard node.js inherits()
+│ │ │ │   git://github.com/isaacs/inherits.git
+│ │ │ │   https://github.com/isaacs/inherits#readme
+│ │ │ ├─┬ minimatch@2.0.10
+│ │ │ │ │ a glob matcher in javascript
+│ │ │ │ │ git://github.com/isaacs/minimatch.git
+│ │ │ │ │ https://github.com/isaacs/minimatch#readme
+│ │ │ │ └─┬ brace-expansion@1.1.1
+│ │ │ │   │ Brace expansion as known from sh/bash
+│ │ │ │   │ git://github.com/juliangruber/brace-expansion.git
+│ │ │ │   │ https://github.com/juliangruber/brace-expansion
+│ │ │ │   ├── balanced-match@0.2.0
+│ │ │ │   │   Match balanced character pairs, like "{" and "}"
+│ │ │ │   │   git://github.com/juliangruber/balanced-match.git
+│ │ │ │   │   https://github.com/juliangruber/balanced-match
+│ │ │ │   └── concat-map@0.0.1
+│ │ │ │       concatenative mapdashery
+│ │ │ │       git://github.com/substack/node-concat-map.git
+│ │ │ │       https://github.com/substack/node-concat-map
+│ │ │ └── once@1.3.2
+│ │ │     Run a function exactly one time
+│ │ │     git://github.com/isaacs/once.git
+│ │ │     https://github.com/isaacs/once#readme
+│ │ ├── graceful-fs@4.1.2
+│ │ │   A drop-in replacement for fs, making various improvements.
+│ │ │   git+https://github.com/isaacs/node-graceful-fs.git
+│ │ │   https://github.com/isaacs/node-graceful-fs#readme
+│ │ ├─┬ minimatch@1.0.0
+│ │ │ │ a glob matcher in javascript
+│ │ │ │ git://github.com/isaacs/minimatch.git
+│ │ │ │ https://github.com/isaacs/minimatch
+│ │ │ ├── lru-cache@2.7.0
+│ │ │ │   A cache object that deletes the least-recently-used items.
+│ │ │ │   git://github.com/isaacs/node-lru-cache.git
+│ │ │ │   https://github.com/isaacs/node-lru-cache#readme
+│ │ │ └── sigmund@1.0.1
+│ │ │     Quick and dirty signatures for Objects.
+│ │ │     git://github.com/isaacs/sigmund.git
+│ │ │     https://github.com/isaacs/sigmund#readme
+│ │ ├── mkdirp@0.5.1
+│ │ │   Recursively mkdir, like `mkdir -p`
+│ │ │   git+https://github.com/substack/node-mkdirp.git
+│ │ │   https://github.com/substack/node-mkdirp#readme
+│ │ ├── nopt@3.0.4
+│ │ │   Option parsing for Node, supporting types, shorthands, etc. Used by npm.
+│ │ │   git+ssh://git@github.com/isaacs/nopt.git
+│ │ │   https://github.com/isaacs/nopt#readme
+│ │ ├── npmlog@1.2.1
+│ │ │   logger for npm
+│ │ │   git://github.com/isaacs/npmlog.git
+│ │ │   https://github.com/isaacs/npmlog#readme
+│ │ ├── osenv@0.1.3
+│ │ │   Look up environment settings specific to different operating systems
+│ │ │   git+https://github.com/npm/osenv.git
+│ │ │   https://github.com/npm/osenv#readme
+│ │ ├─┬ path-array@1.0.0
+│ │ │ │ Treat your $PATH like a JavaScript Array
+│ │ │ │ git://github.com/TooTallNate/node-path-array.git
+│ │ │ │ https://github.com/TooTallNate/node-path-array
+│ │ │ └─┬ array-index@0.1.1
+│ │ │   │ Invoke getter/setter functions on array-like objects
+│ │ │   │ git://github.com/TooTallNate/array-index.git
+│ │ │   │ https://github.com/TooTallNate/array-index
+│ │ │   └─┬ debug@2.2.0
+│ │ │     │ small debugging utility
+│ │ │     │ git://github.com/visionmedia/debug.git
+│ │ │     │ https://github.com/visionmedia/debug#readme
+│ │ │     └── ms@0.7.1
+│ │ │         Tiny ms conversion utility
+│ │ │         git://github.com/guille/ms.js.git
+│ │ │         https://github.com/guille/ms.js#readme
+│ │ ├── request@2.65.0
+│ │ │   Simplified HTTP request client.
+│ │ │   git+https://github.com/request/request.git
+│ │ │   https://github.com/request/request#readme
+│ │ ├── rimraf@2.4.3
+│ │ │   A deep deletion module for node (like `rm -rf`)
+│ │ │   git://github.com/isaacs/rimraf.git
+│ │ │   https://github.com/isaacs/rimraf#readme
+│ │ ├── semver@5.0.3
+│ │ │   The semantic version parser used by npm.
+│ │ │   git+https://github.com/npm/node-semver.git
+│ │ │   https://github.com/npm/node-semver#readme
+│ │ ├─┬ tar@1.0.3
+│ │ │ │ tar for node
+│ │ │ │ git://github.com/isaacs/node-tar.git
+│ │ │ │ https://github.com/isaacs/node-tar
+│ │ │ ├─┬ block-stream@0.0.8
+│ │ │ │ │ a stream of blocks
+│ │ │ │ │ git://github.com/isaacs/block-stream.git
+│ │ │ │ │ https://github.com/isaacs/block-stream#readme
+│ │ │ │ └── inherits@2.0.1
+│ │ │ │     Browser-friendly inheritance fully compatible with standard node.js inherits()
+│ │ │ │     git://github.com/isaacs/inherits.git
+│ │ │ │     https://github.com/isaacs/inherits#readme
+│ │ │ ├── fstream@1.0.8
+│ │ │ │   Advanced file system stream things
+│ │ │ │   git://github.com/isaacs/fstream.git
+│ │ │ │   https://github.com/isaacs/fstream#readme
+│ │ │ └── inherits@2.0.1
+│ │ │     Browser-friendly inheritance fully compatible with standard node.js inherits()
+│ │ │     git://github.com/isaacs/inherits.git
+│ │ │     https://github.com/isaacs/inherits#readme
+│ │ └── which@1.2.0
+│ │     Like which(1) unix command. Find the first instance of an executable in the PATH.
+│ │     git://github.com/isaacs/node-which.git
+│ │     https://github.com/isaacs/node-which#readme
+│ ├─┬ nopt@3.0.4
+│ │ │ Option parsing for Node, supporting types, shorthands, etc. Used by npm.
+│ │ │ git+ssh://git@github.com/isaacs/nopt.git
+│ │ │ https://github.com/isaacs/nopt#readme
+│ │ └── abbrev@1.0.7
+│ │     Like ruby's abbrev module, but in js
+│ │     git+ssh://git@github.com/isaacs/abbrev-js.git
+│ │     https://github.com/isaacs/abbrev-js#readme
+│ ├── normalize-git-url@3.0.1
+│ │   Normalizes Git URLs. For npm, but you can use it too.
+│ │   git+https://github.com/npm/normalize-git-url.git
+│ │   https://github.com/npm/normalize-git-url
+│ ├─┬ normalize-package-data@2.3.4
+│ │ │ Normalizes data that can be found in package.json files.
+│ │ │ git://github.com/npm/normalize-package-data.git
+│ │ │ https://github.com/npm/normalize-package-data#readme
+│ │ ├── hosted-git-info@2.1.4
+│ │ │   Provides metadata and conversions from repository urls for Github, Bitbucket and Gitlab
+│ │ │   git+https://github.com/npm/hosted-git-info.git
+│ │ │   https://github.com/npm/hosted-git-info
+│ │ ├─┬ is-builtin-module@1.0.0
+│ │ │ │ Check if a string matches the name of a Node.js builtin module
+│ │ │ │ git+https://github.com/sindresorhus/is-builtin-module.git
+│ │ │ │ https://github.com/sindresorhus/is-builtin-module
+│ │ │ └── builtin-modules@1.1.0
+│ │ │     List of the Node.js builtin modules
+│ │ │     git+https://github.com/sindresorhus/builtin-modules.git
+│ │ │     https://github.com/sindresorhus/builtin-modules#readme
+│ │ ├── semver@5.0.3
+│ │ │   The semantic version parser used by npm.
+│ │ │   git+https://github.com/npm/node-semver.git
+│ │ │   https://github.com/npm/node-semver#readme
+│ │ └── validate-npm-package-license@3.0.1
+│ │     Give me a string and I'll tell you if it's a valid npm package license string
+│ │     git+https://github.com/kemitchell/validate-npm-package-license.js.git
+│ │     https://github.com/kemitchell/validate-npm-package-license.js#readme
+│ ├── npm-cache-filename@1.0.2
+│ │   Given a cache folder and url, return the appropriate cache folder.
+│ │   git://github.com/npm/npm-cache-filename.git
+│ │   https://github.com/npm/npm-cache-filename
+│ ├─┬ npm-install-checks@2.0.1
+│ │ │ checks that npm runs during the installation of a module
+│ │ │ git://github.com/npm/npm-install-checks.git
+│ │ │ https://github.com/npm/npm-install-checks
+│ │ ├── npmlog@1.2.1
+│ │ │   logger for npm
+│ │ │   git://github.com/isaacs/npmlog.git
+│ │ │   https://github.com/isaacs/npmlog#readme
+│ │ └── semver@5.0.3
+│ │     The semantic version parser used by npm.
+│ │     git+https://github.com/npm/node-semver.git
+│ │     https://github.com/npm/node-semver#readme
+│ ├─┬ npm-package-arg@4.0.2
+│ │ │ Parse the things that can be arguments to `npm install`
+│ │ │ git+https://github.com/npm/npm-package-arg.git
+│ │ │ https://github.com/npm/npm-package-arg
+│ │ ├── hosted-git-info@2.1.4
+│ │ │   Provides metadata and conversions from repository urls for Github, Bitbucket and Gitlab
+│ │ │   git+https://github.com/npm/hosted-git-info.git
+│ │ │   https://github.com/npm/hosted-git-info
+│ │ └── semver@5.0.3
+│ │     The semantic version parser used by npm.
+│ │     git+https://github.com/npm/node-semver.git
+│ │     https://github.com/npm/node-semver#readme
+│ ├─┬ npm-registry-client@7.0.7
+│ │ │ Client for the npm registry
+│ │ │ git://github.com/isaacs/npm-registry-client.git
+│ │ │ https://github.com/isaacs/npm-registry-client#readme
+│ │ ├── chownr@1.0.1
+│ │ │   like `chown -R`
+│ │ │   git://github.com/isaacs/chownr.git
+│ │ │   https://github.com/isaacs/chownr#readme
+│ │ ├─┬ concat-stream@1.5.0
+│ │ │ │ writable stream that concatenates strings or binary data and calls a callback with the result
+│ │ │ │ git+ssh://git@github.com/maxogden/concat-stream.git
+│ │ │ │ https://github.com/maxogden/concat-stream#readme
+│ │ │ ├── inherits@2.0.1
+│ │ │ │   Browser-friendly inheritance fully compatible with standard node.js inherits()
+│ │ │ │   git://github.com/isaacs/inherits.git
+│ │ │ │   https://github.com/isaacs/inherits#readme
+│ │ │ ├─┬ readable-stream@2.0.2
+│ │ │ │ │ Streams3, a user-land copy of the stream library from iojs v2.x
+│ │ │ │ │ git://github.com/nodejs/readable-stream.git
+│ │ │ │ │ https://github.com/nodejs/readable-stream#readme
+│ │ │ │ ├── core-util-is@1.0.1
+│ │ │ │ │   The `util.is*` functions introduced in Node v0.12.
+│ │ │ │ │   git://github.com/isaacs/core-util-is.git
+│ │ │ │ │   https://github.com/isaacs/core-util-is#readme
+│ │ │ │ ├── inherits@2.0.1
+│ │ │ │ │   Browser-friendly inheritance fully compatible with standard node.js inherits()
+│ │ │ │ │   git://github.com/isaacs/inherits.git
+│ │ │ │ │   https://github.com/isaacs/inherits#readme
+│ │ │ │ ├── isarray@0.0.1
+│ │ │ │ │   Array#isArray for older browsers
+│ │ │ │ │   git://github.com/juliangruber/isarray.git
+│ │ │ │ │   https://github.com/juliangruber/isarray
+│ │ │ │ ├── process-nextick-args@1.0.3
+│ │ │ │ │   process.nextTick but always with args
+│ │ │ │ │   git+https://github.com/calvinmetcalf/process-nextick-args.git
+│ │ │ │ │   https://github.com/calvinmetcalf/process-nextick-args
+│ │ │ │ ├── string_decoder@0.10.31
+│ │ │ │ │   The string_decoder module from Node core
+│ │ │ │ │   git://github.com/rvagg/string_decoder.git
+│ │ │ │ │   https://github.com/rvagg/string_decoder
+│ │ │ │ └── util-deprecate@1.0.2
+│ │ │ │     The Node.js `util.deprecate()` function with browser support
+│ │ │ │     git://github.com/TooTallNate/util-deprecate.git
+│ │ │ │     https://github.com/TooTallNate/util-deprecate
+│ │ │ └── typedarray@0.0.6
+│ │ │     TypedArray polyfill for old browsers
+│ │ │     git://github.com/substack/typedarray.git
+│ │ │     https://github.com/substack/typedarray
+│ │ ├── graceful-fs@4.1.2
+│ │ │   A drop-in replacement for fs, making various improvements.
+│ │ │   git+https://github.com/isaacs/node-graceful-fs.git
+│ │ │   https://github.com/isaacs/node-graceful-fs#readme
+│ │ ├── mkdirp@0.5.1
+│ │ │   Recursively mkdir, like `mkdir -p`
+│ │ │   git+https://github.com/substack/node-mkdirp.git
+│ │ │   https://github.com/substack/node-mkdirp#readme
+│ │ ├── normalize-package-data@2.3.4
+│ │ │   Normalizes data that can be found in package.json files.
+│ │ │   git://github.com/npm/normalize-package-data.git
+│ │ │   https://github.com/npm/normalize-package-data#readme
+│ │ ├── npm-package-arg@4.0.2
+│ │ │   Parse the things that can be arguments to `npm install`
+│ │ │   git+https://github.com/npm/npm-package-arg.git
+│ │ │   https://github.com/npm/npm-package-arg
+│ │ ├── once@1.3.2
+│ │ │   Run a function exactly one time
+│ │ │   git://github.com/isaacs/once.git
+│ │ │   https://github.com/isaacs/once#readme
+│ │ ├── request@2.65.0
+│ │ │   Simplified HTTP request client.
+│ │ │   git+https://github.com/request/request.git
+│ │ │   https://github.com/request/request#readme
+│ │ ├── retry@0.8.0
+│ │ │   Abstraction for exponential and custom retry strategies for failed operations.
+│ │ │   git://github.com/tim-kos/node-retry.git
+│ │ │   https://github.com/tim-kos/node-retry
+│ │ ├── rimraf@2.4.3
+│ │ │   A deep deletion module for node (like `rm -rf`)
+│ │ │   git://github.com/isaacs/rimraf.git
+│ │ │   https://github.com/isaacs/rimraf#readme
+│ │ ├── semver@5.0.3
+│ │ │   The semantic version parser used by npm.
+│ │ │   git+https://github.com/npm/node-semver.git
+│ │ │   https://github.com/npm/node-semver#readme
+│ │ └── slide@1.1.6
+│ │     A flow control lib small enough to fit on in a slide presentation. Derived live at Oak.JS
+│ │     git://github.com/isaacs/slide-flow-control.git
+│ │     https://github.com/isaacs/slide-flow-control
+│ ├── npm-user-validate@0.1.2
+│ │   User validations for npm
+│ │   git://github.com/npm/npm-user-validate.git
+│ │   https://github.com/npm/npm-user-validate#readme
+│ ├─┬ npmlog@1.2.1
+│ │ │ logger for npm
+│ │ │ git://github.com/isaacs/npmlog.git
+│ │ │ https://github.com/isaacs/npmlog#readme
+│ │ ├── ansi@0.3.0
+│ │ │   Advanced ANSI formatting tool for Node.js
+│ │ │   git://github.com/TooTallNate/ansi.js.git
+│ │ │   https://github.com/TooTallNate/ansi.js
+│ │ ├─┬ are-we-there-yet@1.0.4
+│ │ │ │ Keep track of the overall completion of many dispirate processes
+│ │ │ │ git+https://github.com/iarna/are-we-there-yet.git
+│ │ │ │ https://github.com/iarna/are-we-there-yet
+│ │ │ ├── delegates@0.1.0
+│ │ │ │   delegate methods and accessors to another property
+│ │ │ │   git://github.com/visionmedia/node-delegates.git
+│ │ │ │   https://github.com/visionmedia/node-delegates
+│ │ │ └─┬ readable-stream@1.1.13
+│ │ │   │ Streams3, a user-land copy of the stream library from Node.js v0.11.x
+│ │ │   │ git://github.com/isaacs/readable-stream.git
+│ │ │   │ https://github.com/isaacs/readable-stream#readme
+│ │ │   ├── core-util-is@1.0.1
+│ │ │   │   The `util.is*` functions introduced in Node v0.12.
+│ │ │   │   git://github.com/isaacs/core-util-is.git
+│ │ │   │   https://github.com/isaacs/core-util-is#readme
+│ │ │   ├── inherits@2.0.1
+│ │ │   │   Browser-friendly inheritance fully compatible with standard node.js inherits()
+│ │ │   │   git://github.com/isaacs/inherits.git
+│ │ │   │   https://github.com/isaacs/inherits#readme
+│ │ │   ├── isarray@0.0.1
+│ │ │   │   Array#isArray for older browsers
+│ │ │   │   git://github.com/juliangruber/isarray.git
+│ │ │   │   https://github.com/juliangruber/isarray
+│ │ │   └── string_decoder@0.10.31
+│ │ │       The string_decoder module from Node core
+│ │ │       git://github.com/rvagg/string_decoder.git
+│ │ │       https://github.com/rvagg/string_decoder
+│ │ └─┬ gauge@1.2.2
+│ │   │ A terminal based horizontal guage
+│ │   │ git+https://github.com/iarna/gauge.git
+│ │   │ https://github.com/iarna/gauge
+│ │   ├── ansi@0.3.0
+│ │   │   Advanced ANSI formatting tool for Node.js
+│ │   │   git://github.com/TooTallNate/ansi.js.git
+│ │   │   https://github.com/TooTallNate/ansi.js
+│ │   ├── has-unicode@1.0.1
+│ │   │   Try to guess if your terminal supports unicode
+│ │   │   git+https://github.com/iarna/has-unicode.git
+│ │   │   https://github.com/iarna/has-unicode
+│ │   ├─┬ lodash.pad@3.1.1
+│ │   │ │ The modern build of lodash’s `_.pad` as a module.
+│ │   │ │ git+https://github.com/lodash/lodash.git
+│ │   │ │ https://lodash.com/
+│ │   │ ├── lodash._basetostring@3.0.1
+│ │   │ │   The modern build of lodash’s internal `baseToString` as a module.
+│ │   │ │   git+https://github.com/lodash/lodash.git
+│ │   │ │   https://lodash.com/
+│ │   │ └─┬ lodash._createpadding@3.6.1
+│ │   │   │ The modern build of lodash’s internal `createPadding` as a module.
+│ │   │   │ git+https://github.com/lodash/lodash.git
+│ │   │   │ https://lodash.com/
+│ │   │   └─┬ lodash.repeat@3.0.1
+│ │   │     │ The modern build of lodash’s `_.repeat` as a module.
+│ │   │     │ git+https://github.com/lodash/lodash.git
+│ │   │     │ https://lodash.com/
+│ │   │     └── lodash._basetostring@3.0.1
+│ │   │         The modern build of lodash’s internal `baseToString` as a module.
+│ │   │         git+https://github.com/lodash/lodash.git
+│ │   │         https://lodash.com/
+│ │   ├─┬ lodash.padleft@3.1.1
+│ │   │ │ The modern build of lodash’s `_.padLeft` as a module.
+│ │   │ │ git+https://github.com/lodash/lodash.git
+│ │   │ │ https://lodash.com/
+│ │   │ ├── lodash._basetostring@3.0.1
+│ │   │ │   The modern build of lodash’s internal `baseToString` as a module.
+│ │   │ │   git+https://github.com/lodash/lodash.git
+│ │   │ │   https://lodash.com/
+│ │   │ └── lodash._createpadding@3.6.1
+│ │   │     The modern build of lodash’s internal `createPadding` as a module.
+│ │   │     git+https://github.com/lodash/lodash.git
+│ │   │     https://lodash.com/
+│ │   └─┬ lodash.padright@3.1.1
+│ │     │ The modern build of lodash’s `_.padRight` as a module.
+│ │     │ git+https://github.com/lodash/lodash.git
+│ │     │ https://lodash.com/
+│ │     ├── lodash._basetostring@3.0.1
+│ │     │   The modern build of lodash’s internal `baseToString` as a module.
+│ │     │   git+https://github.com/lodash/lodash.git
+│ │     │   https://lodash.com/
+│ │     └── lodash._createpadding@3.6.1
+│ │         The modern build of lodash’s internal `createPadding` as a module.
+│ │         git+https://github.com/lodash/lodash.git
+│ │         https://lodash.com/
+│ ├─┬ once@1.3.2
+│ │ │ Run a function exactly one time
+│ │ │ git://github.com/isaacs/once.git
+│ │ │ https://github.com/isaacs/once#readme
+│ │ └── wrappy@1.0.1
+│ │     Callback wrapping utility
+│ │     git+https://github.com/npm/wrappy.git
+│ │     https://github.com/npm/wrappy
+│ ├── opener@1.4.1
+│ │   Opens stuff, like webpages and files and executables, cross-platform
+│ │   git+https://github.com/domenic/opener.git
+│ │   https://github.com/domenic/opener
+│ ├─┬ osenv@0.1.3
+│ │ │ Look up environment settings specific to different operating systems
+│ │ │ git+https://github.com/npm/osenv.git
+│ │ │ https://github.com/npm/osenv#readme
+│ │ ├── os-homedir@1.0.1
+│ │ │   io.js 2.3.0 os.homedir() ponyfill
+│ │ │   git+https://github.com/sindresorhus/os-homedir.git
+│ │ │   https://github.com/sindresorhus/os-homedir#readme
+│ │ └── os-tmpdir@1.0.1
+│ │     Node.js os.tmpdir() ponyfill
+│ │     git+https://github.com/sindresorhus/os-tmpdir.git
+│ │     https://github.com/sindresorhus/os-tmpdir#readme
+│ ├── path-is-inside@1.0.1
+│ │   Tests whether one path is inside another path
+│ │   git://github.com/domenic/path-is-inside.git
+│ │   https://github.com/domenic/path-is-inside#readme
+│ ├─┬ read@1.0.7
+│ │ │ read(1) for node programs
+│ │ │ git://github.com/isaacs/read.git
+│ │ │ https://github.com/isaacs/read#readme
+│ │ └── mute-stream@0.0.5
+│ │     Bytes go in, but they don't come out (when muted).
+│ │     git://github.com/isaacs/mute-stream.git
+│ │     https://github.com/isaacs/mute-stream#readme
+│ ├─┬ read-cmd-shim@1.0.1
+│ │ │ Figure out what a cmd-shim is pointing at. This acts as the equivalent of fs.readlink.
+│ │ │ git+https://github.com/npm/read-cmd-shim.git
+│ │ │ https://github.com/npm/read-cmd-shim#readme
+│ │ └── graceful-fs@4.1.2
+│ │     A drop-in replacement for fs, making various improvements.
+│ │     git+https://github.com/isaacs/node-graceful-fs.git
+│ │     https://github.com/isaacs/node-graceful-fs#readme
+│ ├─┬ read-installed@4.0.3
+│ │ │ Read all the installed packages in a folder, and return a tree structure with all the data.
+│ │ │ git://github.com/isaacs/read-installed.git
+│ │ │ https://github.com/isaacs/read-installed#readme
+│ │ ├── debuglog@1.0.1
+│ │ │   backport of util.debuglog from node v0.11
+│ │ │   git+https://github.com/sam-github/node-debuglog.git
+│ │ │   https://github.com/sam-github/node-debuglog
+│ │ ├── graceful-fs@4.1.2
+│ │ │   A drop-in replacement for fs, making various improvements.
+│ │ │   git+https://github.com/isaacs/node-graceful-fs.git
+│ │ │   https://github.com/isaacs/node-graceful-fs#readme
+│ │ ├── read-package-json@2.0.1
+│ │ │   The thing npm uses to read package.json files with semantics and defaults and validation
+│ │ │   git://github.com/isaacs/read-package-json.git
+│ │ │   https://github.com/isaacs/read-package-json#readme
+│ │ ├── readdir-scoped-modules@1.0.2
+│ │ │   Like `fs.readdir` but handling `@org/module` dirs as if they were a single entry.
+│ │ │   git+https://github.com/npm/readdir-scoped-modules.git
+│ │ │   https://github.com/npm/readdir-scoped-modules
+│ │ ├── semver@5.0.3
+│ │ │   The semantic version parser used by npm.
+│ │ │   git+https://github.com/npm/node-semver.git
+│ │ │   https://github.com/npm/node-semver#readme
+│ │ ├── slide@1.1.6
+│ │ │   A flow control lib small enough to fit on in a slide presentation. Derived live at Oak.JS
+│ │ │   git://github.com/isaacs/slide-flow-control.git
+│ │ │   https://github.com/isaacs/slide-flow-control
+│ │ └── util-extend@1.0.1
+│ │     Node's internal object extension function
+│ │     git://github.com/isaacs/util-extend.git
+│ │     https://github.com/isaacs/util-extend#readme
+│ ├─┬ read-package-json@2.0.1
+│ │ │ The thing npm uses to read package.json files with semantics and defaults and validation
+│ │ │ git://github.com/isaacs/read-package-json.git
+│ │ │ https://github.com/isaacs/read-package-json#readme
+│ │ ├── glob@5.0.15
+│ │ │   a little globber
+│ │ │   git://github.com/isaacs/node-glob.git
+│ │ │   https://github.com/isaacs/node-glob#readme
+│ │ ├── graceful-fs@4.1.2
+│ │ │   A drop-in replacement for fs, making various improvements.
+│ │ │   git+https://github.com/isaacs/node-graceful-fs.git
+│ │ │   https://github.com/isaacs/node-graceful-fs#readme
+│ │ ├─┬ json-parse-helpfulerror@1.0.3
+│ │ │ │ A drop-in replacement for JSON.parse that uses `jju` to give helpful errors
+│ │ │ │ git+https://github.com/smikes/json-parse-helpfulerror.git
+│ │ │ │ https://github.com/smikes/json-parse-helpfulerror
+│ │ │ └── jju@1.2.1
+│ │ │     a set of utilities to work with JSON / JSON5 documents
+│ │ │     git://github.com/rlidwka/jju.git
+│ │ │     http://rlidwka.github.io/jju/
+│ │ └── normalize-package-data@2.3.4
+│ │     Normalizes data that can be found in package.json files.
+│ │     git://github.com/npm/normalize-package-data.git
+│ │     https://github.com/npm/normalize-package-data#readme
+│ ├─┬ read-package-tree@5.1.2
+│ │ │ Read the contents of node_modules.
+│ │ │ git+https://github.com/npm/read-package-tree.git
+│ │ │ https://github.com/npm/read-package-tree
+│ │ ├── debuglog@1.0.1
+│ │ │   backport of util.debuglog from node v0.11
+│ │ │   git+https://github.com/sam-github/node-debuglog.git
+│ │ │   https://github.com/sam-github/node-debuglog
+│ │ ├── dezalgo@1.0.3
+│ │ │   Contain async insanity so that the dark pony lord doesn't eat souls
+│ │ │   git+https://github.com/npm/dezalgo.git
+│ │ │   https://github.com/npm/dezalgo
+│ │ ├── once@1.3.2
+│ │ │   Run a function exactly one time
+│ │ │   git://github.com/isaacs/once.git
+│ │ │   https://github.com/isaacs/once#readme
+│ │ ├── read-package-json@2.0.1
+│ │ │   The thing npm uses to read package.json files with semantics and defaults and validation
+│ │ │   git://github.com/isaacs/read-package-json.git
+│ │ │   https://github.com/isaacs/read-package-json#readme
+│ │ └── readdir-scoped-modules@1.0.2
+│ │     Like `fs.readdir` but handling `@org/module` dirs as if they were a single entry.
+│ │     git+https://github.com/npm/readdir-scoped-modules.git
+│ │     https://github.com/npm/readdir-scoped-modules
+│ ├─┬ readdir-scoped-modules@1.0.2
+│ │ │ Like `fs.readdir` but handling `@org/module` dirs as if they were a single entry.
+│ │ │ git+https://github.com/npm/readdir-scoped-modules.git
+│ │ │ https://github.com/npm/readdir-scoped-modules
+│ │ ├── debuglog@1.0.1
+│ │ │   backport of util.debuglog from node v0.11
+│ │ │   git+https://github.com/sam-github/node-debuglog.git
+│ │ │   https://github.com/sam-github/node-debuglog
+│ │ ├── dezalgo@1.0.3
+│ │ │   Contain async insanity so that the dark pony lord doesn't eat souls
+│ │ │   git+https://github.com/npm/dezalgo.git
+│ │ │   https://github.com/npm/dezalgo
+│ │ ├── graceful-fs@4.1.2
+│ │ │   A drop-in replacement for fs, making various improvements.
+│ │ │   git+https://github.com/isaacs/node-graceful-fs.git
+│ │ │   https://github.com/isaacs/node-graceful-fs#readme
+│ │ └── once@1.3.2
+│ │     Run a function exactly one time
+│ │     git://github.com/isaacs/once.git
+│ │     https://github.com/isaacs/once#readme
+│ ├─┬ realize-package-specifier@3.0.1
+│ │ │ Like npm-package-arg, but more so, producing full file paths and differentiating local tar and directory sources.
+│ │ │ git+https://github.com/npm/realize-package-specifier.git
+│ │ │ https://github.com/npm/realize-package-specifier
+│ │ ├── dezalgo@1.0.3
+│ │ │   Contain async insanity so that the dark pony lord doesn't eat souls
+│ │ │   git+https://github.com/npm/dezalgo.git
+│ │ │   https://github.com/npm/dezalgo
+│ │ └── npm-package-arg@4.0.2
+│ │     Parse the things that can be arguments to `npm install`
+│ │     git+https://github.com/npm/npm-package-arg.git
+│ │     https://github.com/npm/npm-package-arg
+│ ├─┬ request@2.65.0
+│ │ │ Simplified HTTP request client.
+│ │ │ git+https://github.com/request/request.git
+│ │ │ https://github.com/request/request#readme
+│ │ ├── aws-sign2@0.6.0
+│ │ │   AWS signing. Originally pulled from LearnBoost/knox, maintained as vendor in request, now a standalone module.
+│ │ │   git+https://github.com/mikeal/aws-sign.git
+│ │ │   https://github.com/mikeal/aws-sign#readme
+│ │ ├─┬ bl@1.0.0
+│ │ │ │ Buffer List: collect buffers and access with a standard readable Buffer interface, streamable too!
+│ │ │ │ git+https://github.com/rvagg/bl.git
+│ │ │ │ https://github.com/rvagg/bl
+│ │ │ └─┬ readable-stream@2.0.2
+│ │ │   │ Streams3, a user-land copy of the stream library from iojs v2.x
+│ │ │   │ git://github.com/nodejs/readable-stream.git
+│ │ │   │ https://github.com/nodejs/readable-stream#readme
+│ │ │   ├── core-util-is@1.0.1
+│ │ │   │   The `util.is*` functions introduced in Node v0.12.
+│ │ │   │   git://github.com/isaacs/core-util-is.git
+│ │ │   │   https://github.com/isaacs/core-util-is#readme
+│ │ │   ├── inherits@2.0.1
+│ │ │   │   Browser-friendly inheritance fully compatible with standard node.js inherits()
+│ │ │   │   git://github.com/isaacs/inherits.git
+│ │ │   │   https://github.com/isaacs/inherits#readme
+│ │ │   ├── isarray@0.0.1
+│ │ │   │   Array#isArray for older browsers
+│ │ │   │   git://github.com/juliangruber/isarray.git
+│ │ │   │   https://github.com/juliangruber/isarray
+│ │ │   ├── process-nextick-args@1.0.3
+│ │ │   │   process.nextTick but always with args
+│ │ │   │   git+https://github.com/calvinmetcalf/process-nextick-args.git
+│ │ │   │   https://github.com/calvinmetcalf/process-nextick-args
+│ │ │   ├── string_decoder@0.10.31
+│ │ │   │   The string_decoder module from Node core
+│ │ │   │   git://github.com/rvagg/string_decoder.git
+│ │ │   │   https://github.com/rvagg/string_decoder
+│ │ │   └── util-deprecate@1.0.2
+│ │ │       The Node.js `util.deprecate()` function with browser support
+│ │ │       git://github.com/TooTallNate/util-deprecate.git
+│ │ │       https://github.com/TooTallNate/util-deprecate
+│ │ ├── caseless@0.11.0
+│ │ │   Caseless object set/get/has, very useful when working with HTTP headers.
+│ │ │   git+https://github.com/mikeal/caseless.git
+│ │ │   https://github.com/mikeal/caseless#readme
+│ │ ├─┬ combined-stream@1.0.5
+│ │ │ │ A stream that emits multiple other streams one after another.
+│ │ │ │ git://github.com/felixge/node-combined-stream.git
+│ │ │ │ https://github.com/felixge/node-combined-stream
+│ │ │ └── delayed-stream@1.0.0
+│ │ │     Buffers events from a stream until you are ready to handle them.
+│ │ │     git://github.com/felixge/node-delayed-stream.git
+│ │ │     https://github.com/felixge/node-delayed-stream
+│ │ ├── extend@3.0.0
+│ │ │   Port of jQuery.extend for node.js and the browser
+│ │ │   git+https://github.com/justmoon/node-extend.git
+│ │ │   https://github.com/justmoon/node-extend#readme
+│ │ ├── forever-agent@0.6.1
+│ │ │   HTTP Agent that keeps socket connections alive between keep-alive requests. Formerly part of mikeal/request, now a standalone module.
+│ │ │   git+https://github.com/mikeal/forever-agent.git
+│ │ │   https://github.com/mikeal/forever-agent#readme
+│ │ ├─┬ form-data@1.0.0-rc3
+│ │ │ │ A library to create readable "multipart/form-data" streams. Can be used to submit forms and file uploads to other web applications.
+│ │ │ │ git://github.com/form-data/form-data.git
+│ │ │ │ https://github.com/form-data/form-data#readme
+│ │ │ ├── async@1.4.2
+│ │ │ │   Higher-order functions and common patterns for asynchronous code
+│ │ │ │   git+https://github.com/caolan/async.git
+│ │ │ │   https://github.com/caolan/async#readme
+│ │ │ ├── combined-stream@1.0.5
+│ │ │ │   A stream that emits multiple other streams one after another.
+│ │ │ │   git://github.com/felixge/node-combined-stream.git
+│ │ │ │   https://github.com/felixge/node-combined-stream
+│ │ │ └── mime-types@2.1.7
+│ │ │     The ultimate javascript content-type utility.
+│ │ │     git+https://github.com/jshttp/mime-types.git
+│ │ │     https://github.com/jshttp/mime-types#readme
+│ │ ├─┬ har-validator@2.0.2
+│ │ │ │ Extremely fast HTTP Archive (HAR) validator using JSON Schema
+│ │ │ │ git+https://github.com/ahmadnassri/har-validator.git
+│ │ │ │ https://github.com/ahmadnassri/har-validator
+│ │ │ ├─┬ chalk@1.1.1
+│ │ │ │ │ Terminal string styling done right. Much color.
+│ │ │ │ │ git+https://github.com/chalk/chalk.git
+│ │ │ │ │ https://github.com/chalk/chalk#readme
+│ │ │ │ ├── ansi-styles@2.1.0
+│ │ │ │ │   ANSI escape codes for styling strings in the terminal
+│ │ │ │ │   git+https://github.com/chalk/ansi-styles.git
+│ │ │ │ │   https://github.com/chalk/ansi-styles#readme
+│ │ │ │ ├── escape-string-regexp@1.0.3
+│ │ │ │ │   Escape RegExp special characters
+│ │ │ │ │   git+https://github.com/sindresorhus/escape-string-regexp.git
+│ │ │ │ │   https://github.com/sindresorhus/escape-string-regexp#readme
+│ │ │ │ ├─┬ has-ansi@2.0.0
+│ │ │ │ │ │ Check if a string has ANSI escape codes
+│ │ │ │ │ │ git+https://github.com/sindresorhus/has-ansi.git
+│ │ │ │ │ │ https://github.com/sindresorhus/has-ansi#readme
+│ │ │ │ │ └── ansi-regex@2.0.0
+│ │ │ │ │     Regular expression for matching ANSI escape codes
+│ │ │ │ │     git+https://github.com/sindresorhus/ansi-regex.git
+│ │ │ │ │     https://github.com/sindresorhus/ansi-regex#readme
+│ │ │ │ ├── strip-ansi@3.0.0
+│ │ │ │ │   Strip ANSI escape codes
+│ │ │ │ │   git+https://github.com/sindresorhus/strip-ansi.git
+│ │ │ │ │   https://github.com/sindresorhus/strip-ansi#readme
+│ │ │ │ └── supports-color@2.0.0
+│ │ │ │     Detect whether a terminal supports color
+│ │ │ │     git+https://github.com/chalk/supports-color.git
+│ │ │ │     https://github.com/chalk/supports-color#readme
+│ │ │ ├─┬ commander@2.9.0
+│ │ │ │ │ the complete solution for node.js command-line programs
+│ │ │ │ │ git+https://github.com/tj/commander.js.git
+│ │ │ │ │ https://github.com/tj/commander.js#readme
+│ │ │ │ └── graceful-readlink@1.0.1
+│ │ │ │     graceful fs.readlink
+│ │ │ │     git://github.com/zhiyelee/graceful-readlink.git
+│ │ │ │     https://github.com/zhiyelee/graceful-readlink
+│ │ │ ├─┬ is-my-json-valid@2.12.2
+│ │ │ │ │ A JSONSchema validator that uses code generation to be extremely fast
+│ │ │ │ │ git+https://github.com/mafintosh/is-my-json-valid.git
+│ │ │ │ │ https://github.com/mafintosh/is-my-json-valid
+│ │ │ │ ├── generate-function@2.0.0
+│ │ │ │ │   Module that helps you write generated functions in Node
+│ │ │ │ │   git+https://github.com/mafintosh/generate-function.git
+│ │ │ │ │   https://github.com/mafintosh/generate-function
+│ │ │ │ ├─┬ generate-object-property@1.2.0
+│ │ │ │ │ │ Generate safe JS code that can used to reference a object property
+│ │ │ │ │ │ git+https://github.com/mafintosh/generate-object-property.git
+│ │ │ │ │ │ https://github.com/mafintosh/generate-object-property
+│ │ │ │ │ └── is-property@1.0.2
+│ │ │ │ │     Tests if a JSON property can be accessed using . syntax
+│ │ │ │ │     git://github.com/mikolalysenko/is-property.git
+│ │ │ │ │     https://github.com/mikolalysenko/is-property#readme
+│ │ │ │ ├── jsonpointer@2.0.0
+│ │ │ │ │   Simple JSON Addressing.
+│ │ │ │ │   git+ssh://git@github.com/janl/node-jsonpointer.git
+│ │ │ │ │   https://github.com/janl/node-jsonpointer#readme
+│ │ │ │ └── xtend@4.0.0
+│ │ │ │     extend like a boss
+│ │ │ │     git://github.com/Raynos/xtend.git
+│ │ │ │     https://github.com/Raynos/xtend
+│ │ │ └─┬ pinkie-promise@1.0.0
+│ │ │   │ ES6 Promise ponyfill
+│ │ │   │ git+https://github.com/floatdrop/pinkie-promise.git
+│ │ │   │ https://github.com/floatdrop/pinkie-promise#readme
+│ │ │   └── pinkie@1.0.0
+│ │ │       Itty bitty little wittle twinkie pinkie ES6 Promise implementation
+│ │ │       git+https://github.com/floatdrop/pinkie.git
+│ │ │       https://github.com/floatdrop/pinkie#readme
+│ │ ├─┬ hawk@3.1.0
+│ │ │ │ HTTP Hawk Authentication Scheme
+│ │ │ │ git://github.com/hueniverse/hawk.git
+│ │ │ │ https://github.com/hueniverse/hawk#readme
+│ │ │ ├─┬ boom@2.9.0
+│ │ │ │ │ HTTP-friendly error objects
+│ │ │ │ │ git://github.com/hapijs/boom.git
+│ │ │ │ │ https://github.com/hapijs/boom#readme
+│ │ │ │ └── hoek@2.16.3
+│ │ │ │     General purpose node utilities
+│ │ │ │     git://github.com/hapijs/hoek.git
+│ │ │ │     https://github.com/hapijs/hoek#readme
+│ │ │ ├─┬ cryptiles@2.0.5
+│ │ │ │ │ General purpose crypto utilities
+│ │ │ │ │ git://github.com/hapijs/cryptiles.git
+│ │ │ │ │ https://github.com/hapijs/cryptiles#readme
+│ │ │ │ └── boom@2.9.0
+│ │ │ │     HTTP-friendly error objects
+│ │ │ │     git://github.com/hapijs/boom.git
+│ │ │ │     https://github.com/hapijs/boom#readme
+│ │ │ ├── hoek@2.16.3
+│ │ │ │   General purpose node utilities
+│ │ │ │   git://github.com/hapijs/hoek.git
+│ │ │ │   https://github.com/hapijs/hoek#readme
+│ │ │ └─┬ sntp@1.0.9
+│ │ │   │ SNTP Client
+│ │ │   │ git://github.com/hueniverse/sntp.git
+│ │ │   │ https://github.com/hueniverse/sntp#readme
+│ │ │   └── hoek@2.16.3
+│ │ │       General purpose node utilities
+│ │ │       git://github.com/hapijs/hoek.git
+│ │ │       https://github.com/hapijs/hoek#readme
+│ │ ├─┬ http-signature@0.11.0
+│ │ │ │ Reference implementation of Joyent's HTTP Signature scheme.
+│ │ │ │ git://github.com/joyent/node-http-signature.git
+│ │ │ │ https://github.com/joyent/node-http-signature/
+│ │ │ ├── asn1@0.1.11
+│ │ │ │   Contains parsers and serializers for ASN.1 (currently BER only)
+│ │ │ │   git://github.com/mcavage/node-asn1.git
+│ │ │ │   https://github.com/mcavage/node-asn1#readme
+│ │ │ ├── assert-plus@0.1.5
+│ │ │ │   Extra assertions on top of node's assert module
+│ │ │ │   git+https://github.com/mcavage/node-assert-plus.git
+│ │ │ │   https://github.com/mcavage/node-assert-plus#readme
+│ │ │ └── ctype@0.5.3
+│ │ │     read and write binary structures and data types
+│ │ │     git+https://github.com/rmustacc/node-ctype.git
+│ │ │     https://github.com/rmustacc/node-ctype
+│ │ ├── isstream@0.1.2
+│ │ │   Determine if an object is a Stream
+│ │ │   git+https://github.com/rvagg/isstream.git
+│ │ │   https://github.com/rvagg/isstream
+│ │ ├── json-stringify-safe@5.0.1
+│ │ │   Like JSON.stringify, but doesn't blow up on circular refs.
+│ │ │   git://github.com/isaacs/json-stringify-safe.git
+│ │ │   https://github.com/isaacs/json-stringify-safe
+│ │ ├─┬ mime-types@2.1.7
+│ │ │ │ The ultimate javascript content-type utility.
+│ │ │ │ git+https://github.com/jshttp/mime-types.git
+│ │ │ │ https://github.com/jshttp/mime-types#readme
+│ │ │ └── mime-db@1.19.0
+│ │ │     Media Type Database
+│ │ │     git+https://github.com/jshttp/mime-db.git
+│ │ │     https://github.com/jshttp/mime-db#readme
+│ │ ├── node-uuid@1.4.3
+│ │ │   Rigorous implementation of RFC4122 (v1 and v4) UUIDs.
+│ │ │   git+https://github.com/broofa/node-uuid.git
+│ │ │   https://github.com/broofa/node-uuid#readme
+│ │ ├── oauth-sign@0.8.0
+│ │ │   OAuth 1 signing. Formerly a vendor lib in mikeal/request, now a standalone module.
+│ │ │   git+https://github.com/mikeal/oauth-sign.git
+│ │ │   https://github.com/mikeal/oauth-sign#readme
+│ │ ├── qs@5.2.0
+│ │ │   A querystring parser that supports nesting and arrays, with a depth limit
+│ │ │   git+https://github.com/hapijs/qs.git
+│ │ │   https://github.com/hapijs/qs
+│ │ ├── stringstream@0.0.4
+│ │ │   Encode and decode streams into string streams
+│ │ │   git+https://github.com/mhart/StringStream.git
+│ │ │   https://github.com/mhart/StringStream#readme
+│ │ ├── tough-cookie@2.2.0
+│ │ │   RFC6265 Cookies and Cookie Jar for node.js
+│ │ │   git://github.com/SalesforceEng/tough-cookie.git
+│ │ │   https://github.com/SalesforceEng/tough-cookie
+│ │ └── tunnel-agent@0.4.1
+│ │     HTTP proxy tunneling agent. Formerly part of mikeal/request, now a standalone module.
+│ │     git+https://github.com/mikeal/tunnel-agent.git
+│ │     https://github.com/mikeal/tunnel-agent#readme
+│ ├── retry@0.8.0
+│ │   Abstraction for exponential and custom retry strategies for failed operations.
+│ │   git://github.com/tim-kos/node-retry.git
+│ │   https://github.com/tim-kos/node-retry
+│ ├─┬ rimraf@2.4.3
+│ │ │ A deep deletion module for node (like `rm -rf`)
+│ │ │ git://github.com/isaacs/rimraf.git
+│ │ │ https://github.com/isaacs/rimraf#readme
+│ │ └── glob@5.0.15
+│ │     a little globber
+│ │     git://github.com/isaacs/node-glob.git
+│ │     https://github.com/isaacs/node-glob#readme
+│ ├── semver@5.0.3
+│ │   The semantic version parser used by npm.
+│ │   git+https://github.com/npm/node-semver.git
+│ │   https://github.com/npm/node-semver#readme
+│ ├─┬ sha@2.0.1
+│ │ │ Check and get file hashes
+│ │ │ git+https://github.com/ForbesLindesay/sha.git
+│ │ │ https://github.com/ForbesLindesay/sha
+│ │ ├── graceful-fs@4.1.2
+│ │ │   A drop-in replacement for fs, making various improvements.
+│ │ │   git+https://github.com/isaacs/node-graceful-fs.git
+│ │ │   https://github.com/isaacs/node-graceful-fs#readme
+│ │ └─┬ readable-stream@2.0.2
+│ │   │ Streams3, a user-land copy of the stream library from iojs v2.x
+│ │   │ git://github.com/nodejs/readable-stream.git
+│ │   │ https://github.com/nodejs/readable-stream#readme
+│ │   ├── core-util-is@1.0.1
+│ │   │   The `util.is*` functions introduced in Node v0.12.
+│ │   │   git://github.com/isaacs/core-util-is.git
+│ │   │   https://github.com/isaacs/core-util-is#readme
+│ │   ├── inherits@2.0.1
+│ │   │   Browser-friendly inheritance fully compatible with standard node.js inherits()
+│ │   │   git://github.com/isaacs/inherits.git
+│ │   │   https://github.com/isaacs/inherits#readme
+│ │   ├── isarray@0.0.1
+│ │   │   Array#isArray for older browsers
+│ │   │   git://github.com/juliangruber/isarray.git
+│ │   │   https://github.com/juliangruber/isarray
+│ │   ├── process-nextick-args@1.0.3
+│ │   │   process.nextTick but always with args
+│ │   │   git+https://github.com/calvinmetcalf/process-nextick-args.git
+│ │   │   https://github.com/calvinmetcalf/process-nextick-args
+│ │   ├── string_decoder@0.10.31
+│ │   │   The string_decoder module from Node core
+│ │   │   git://github.com/rvagg/string_decoder.git
+│ │   │   https://github.com/rvagg/string_decoder
+│ │   └── util-deprecate@1.0.2
+│ │       The Node.js `util.deprecate()` function with browser support
+│ │       git://github.com/TooTallNate/util-deprecate.git
+│ │       https://github.com/TooTallNate/util-deprecate
+│ ├── slide@1.1.6
+│ │   A flow control lib small enough to fit on in a slide presentation. Derived live at Oak.JS
+│ │   git://github.com/isaacs/slide-flow-control.git
+│ │   https://github.com/isaacs/slide-flow-control
+│ ├── sorted-object@1.0.0
+│ │   Returns a copy of an object with its keys sorted
+│ │   git://github.com/domenic/sorted-object.git
+│ │   https://github.com/domenic/sorted-object
+│ ├─┬ strip-ansi@3.0.0
+│ │ │ Strip ANSI escape codes
+│ │ │ git+https://github.com/sindresorhus/strip-ansi.git
+│ │ │ https://github.com/sindresorhus/strip-ansi#readme
+│ │ └── ansi-regex@2.0.0
+│ │     Regular expression for matching ANSI escape codes
+│ │     git+https://github.com/sindresorhus/ansi-regex.git
+│ │     https://github.com/sindresorhus/ansi-regex#readme
+│ ├─┬ tar@2.2.1
+│ │ │ tar for node
+│ │ │ git://github.com/isaacs/node-tar.git
+│ │ │ https://github.com/isaacs/node-tar#readme
+│ │ ├─┬ block-stream@0.0.8
+│ │ │ │ a stream of blocks
+│ │ │ │ git://github.com/isaacs/block-stream.git
+│ │ │ │ https://github.com/isaacs/block-stream#readme
+│ │ │ └── inherits@2.0.1
+│ │ │     Browser-friendly inheritance fully compatible with standard node.js inherits()
+│ │ │     git://github.com/isaacs/inherits.git
+│ │ │     https://github.com/isaacs/inherits#readme
+│ │ ├── fstream@1.0.8
+│ │ │   Advanced file system stream things
+│ │ │   git://github.com/isaacs/fstream.git
+│ │ │   https://github.com/isaacs/fstream#readme
+│ │ └── inherits@2.0.1
+│ │     Browser-friendly inheritance fully compatible with standard node.js inherits()
+│ │     git://github.com/isaacs/inherits.git
+│ │     https://github.com/isaacs/inherits#readme
+│ ├── text-table@0.2.0
+│ │   borderless text tables with alignment
+│ │   git://github.com/substack/text-table.git
+│ │   https://github.com/substack/text-table
+│ ├── uid-number@0.0.6
+│ │   Convert a username/group name to a uid/gid number
+│ │   git://github.com/isaacs/uid-number.git
+│ │   https://github.com/isaacs/uid-number
+│ ├── umask@1.1.0
+│ │   convert umask from string <-> number
+│ │   git+https://github.com/smikes/umask.git
+│ │   https://github.com/smikes/umask
+│ ├─┬ unique-filename@1.0.0
+│ │ │ Generate a unique filename for use in temporary directories or caches.
+│ │ │ git+https://github.com/iarna/unique-filename.git
+│ │ │ https://github.com/iarna/unique-filename
+│ │ └── unique-slug@1.0.0
+│ │     Generate a unique character string suitible for use in files and URLs.
+│ │     git://github.com/iarna/unique-slug.git
+│ │     https://github.com/iarna/unique-slug
+│ ├── unpipe@1.0.0
+│ │   Unpipe a stream from all destinations
+│ │   git+https://github.com/stream-utils/unpipe.git
+│ │   https://github.com/stream-utils/unpipe#readme
+│ ├─┬ validate-npm-package-license@3.0.1
+│ │ │ Give me a string and I'll tell you if it's a valid npm package license string
+│ │ │ git+https://github.com/kemitchell/validate-npm-package-license.js.git
+│ │ │ https://github.com/kemitchell/validate-npm-package-license.js#readme
+│ │ ├─┬ spdx-correct@1.0.1
+│ │ │ │ correct invalid SPDX identifiers
+│ │ │ │ git+https://github.com/kemitchell/spdx-correct.js.git
+│ │ │ │ https://github.com/kemitchell/spdx-correct.js#readme
+│ │ │ └── spdx-license-ids@1.0.2
+│ │ │     A list of SPDX license identifiers
+│ │ │     git+https://github.com/shinnn/spdx-license-ids.git
+│ │ │     https://github.com/shinnn/spdx-license-ids#readme
+│ │ └─┬ spdx-expression-parse@1.0.0
+│ │   │ parse SPDX license expressions
+│ │   │ git+https://github.com/kemitchell/spdx-expression-parse.js.git
+│ │   │ https://github.com/kemitchell/spdx-expression-parse.js#readme
+│ │   ├── spdx-exceptions@1.0.3
+│ │   │   list of SPDX standard license exceptions
+│ │   │   git+https://github.com/kemitchell/spdx-exceptions.json.git
+│ │   │   https://github.com/kemitchell/spdx-exceptions.json#readme
+│ │   └── spdx-license-ids@1.0.2
+│ │       A list of SPDX license identifiers
+│ │       git+https://github.com/shinnn/spdx-license-ids.git
+│ │       https://github.com/shinnn/spdx-license-ids#readme
+│ ├─┬ validate-npm-package-name@2.2.2
+│ │ │ Give me a string and I'll tell you if it's a valid npm package name
+│ │ │ git+https://github.com/npm/validate-npm-package-name.git
+│ │ │ https://github.com/npm/validate-npm-package-name
+│ │ └── builtins@0.0.7
+│ │     List of node.js builtin modules
+│ │     git://github.com/juliangruber/builtins.git
+│ │     https://github.com/juliangruber/builtins
+│ ├─┬ which@1.2.0
+│ │ │ Like which(1) unix command. Find the first instance of an executable in the PATH.
+│ │ │ git://github.com/isaacs/node-which.git
+│ │ │ https://github.com/isaacs/node-which#readme
+│ │ └─┬ is-absolute@0.1.7
+│ │   │ Return true if a file path is absolute.
+│ │   │ git://github.com/jonschlinkert/is-absolute.git
+│ │   │ https://github.com/jonschlinkert/is-absolute
+│ │   └── is-relative@0.1.3
+│ │       Returns `true` if the path appears to be relative.
+│ │       git://github.com/jonschlinkert/is-relative.git
+│ │       https://github.com/jonschlinkert/is-relative
+│ ├── wrappy@1.0.1
+│ │   Callback wrapping utility
+│ │   git+https://github.com/npm/wrappy.git
+│ │   https://github.com/npm/wrappy
+│ └─┬ write-file-atomic@1.1.3
+│   │ Write files in an atomic fashion w/configurable ownership
+│   │ git+ssh://git@github.com/iarna/write-file-atomic.git
+│   │ https://github.com/iarna/write-file-atomic
+│   ├── graceful-fs@4.1.2
+│   │   A drop-in replacement for fs, making various improvements.
+│   │   git+https://github.com/isaacs/node-graceful-fs.git
+│   │   https://github.com/isaacs/node-graceful-fs#readme
+│   └── slide@1.1.6
+│       A flow control lib small enough to fit on in a slide presentation. Derived live at Oak.JS
+│       git://github.com/isaacs/slide-flow-control.git
+│       https://github.com/isaacs/slide-flow-control
+├──  error: ENOENT: no such file or directory, open 'C:\BIN\NodeJS\node_modules\output.coffee\package.json
+│   
+└─┬ triplesec@3.0.25
+  │ A CommonJS-compliant system for secure encryption of smallish secrets
+  │ git+https://github.com/keybase/triplesec.git
+  │ https://github.com/keybase/triplesec
+  ├── iced-error@0.0.9
+  │   An error-handling class written with/for IcedCoffeeScript
+  │   git+https://github.com/maxtaco/iced-error.git
+  │   https://github.com/maxtaco/iced-error
+  ├─┬ iced-lock@1.0.1
+  │ │ Simple lock class
+  │ │ git+https://github.com/maxtaco/iced-lock.git
+  │ │ https://github.com/maxtaco/iced-lock
+  │ └── iced-runtime@1.0.3
+  │     Runtime for IcedCoffeeScript
+  │     git+https://github.com/maxtaco/iced-runtime.git
+  │     https://github.com/maxtaco/iced-runtime#readme
+  ├── iced-runtime@1.0.3
+  │   Runtime for IcedCoffeeScript
+  │   git+https://github.com/maxtaco/iced-runtime.git
+  │   https://github.com/maxtaco/iced-runtime#readme
+  ├─┬ more-entropy@0.0.7
+  │ │ Generate more entropy to combine with Node's crypto.rng or window.crypto
+  │ │ git+https://github.com/keybase/entropy.git
+  │ │ https://github.com/keybase/entropy
+  │ └── iced-runtime@1.0.3
+  │     Runtime for IcedCoffeeScript
+  │     git+https://github.com/maxtaco/iced-runtime.git
+  │     https://github.com/maxtaco/iced-runtime#readme
+  └── progress@1.1.8
+      Flexible ascii progress bar
+      git://github.com/visionmedia/node-progress.git
+      https://github.com/visionmedia/node-progress
+
